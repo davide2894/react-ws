@@ -1,0 +1,9 @@
+.quizStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quizStart button {
+  margin: 1.25rem auto;
+}
