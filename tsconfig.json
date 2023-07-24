@@ -18,7 +18,6 @@
       "@components*": ["./src/components*"],
       "@styles*": ["./src/styles/*"],
       "@pages*": ["./src/pages*"],
-      "@userSlice": ["./src/features/user/userSlice.ts"],
       "@store": ["./src/store.ts"],
       "@types": ["./src/types.ts"],
       "@utils*": ["./src/utils*"]
