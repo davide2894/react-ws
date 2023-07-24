@@ -1,0 +1,35 @@
+.recapStats {
+  margin: 1.5rem auto;
+  font-size: 2rem;
+}
+
+.numberOfCorrectAnswers {
+  text-align: center;
+}
+
+.numberOfCorrectAnswers span {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.quizEndActions {
+  margin: 1.5rem auto;
+}
+
+.quizEndLink {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.recapStats,
+.quizEndActions,
+.quizEndLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizEndLink,
+.quizRestartButton {
+  align-self: center;
+}
