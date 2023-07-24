@@ -1,10 +1,11 @@
 import Modal from "@components/modal/Modal";
-import { logout } from "@userSlice";
+import { logout } from "src/features/user/userSlice";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import logoutStyles from "./Logout.module.css";
 
-function LogoutButton() {
+function LogoutButton(props: { shouldDisplayGameLossWarning: boolean }) {
   const [showLogoutModal, setShowLogoutModal] = useState(false);
   const dispatch = useDispatch();
   const router = useRouter();
@@ -12,30 +13,36 @@ function LogoutButton() {
   function handleLogout(evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     evt.preventDefault();
     dispatch(logout());
-    // setShowLogoutModal(false);
-    router.reload();
+    router.push("/");
   }
 
   return (
     <div>
-      <button
-        className="bg-gray-300 hover:bg-green-700 w-16 h-16 text-black font-bold py-2 px-4 rounded"
-        onClick={() => setShowLogoutModal(true)}>
-        Logout
-      </button>
+      <button onClick={() => setShowLogoutModal(true)}>Logout</button>
       {showLogoutModal && (
-        <Modal onClose={() => setShowLogoutModal(false)}>
-          Are you sure you want to logout?
-          <button
-            className="text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            onClick={(evt) => handleLogout(evt)}>
-            Yes
-          </button>
-          <button
-            className="text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            onClick={() => setShowLogoutModal(false)}>
-            No
-          </button>
+        <Modal text="Logout" onClose={() => setShowLogoutModal(false)}>
+          <div className={logoutStyles.promptContainer}>
+            <p className={logoutStyles.confirmationPrompt}>
+              Are you sure you want to logout?
+            </p>
+            {props.shouldDisplayGameLossWarning ?? (
+              <p className={logoutStyles.warning}>
+                "All of your game progress will be lost"
+              </p>
+            )}
+          </div>
+          <div className={logoutStyles.actions}>
+            <button
+              className={logoutStyles.choice}
+              onClick={(evt) => handleLogout(evt)}>
+              Yes
+            </button>
+            <button
+              className={logoutStyles.choice}
+              onClick={() => setShowLogoutModal(false)}>
+              No
+            </button>
+          </div>
         </Modal>
       )}
     </div>

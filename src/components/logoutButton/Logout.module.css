@@ -1,0 +1,22 @@
+.promptContainer {
+  margin-top: 1.25rem;
+}
+
+.actions {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 6rem;
+  height: 45px;
+}
+
+.choice:hover {
+  background-color: var(--sunset-orange);
+  color: var(--color-white);
+}
