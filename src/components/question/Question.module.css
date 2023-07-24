@@ -1,0 +1,19 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.snippet {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.choiceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
