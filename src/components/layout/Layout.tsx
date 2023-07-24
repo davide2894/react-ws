@@ -1,18 +1,15 @@
-import React from "react";
+import Footer from "@components/footer/Footer";
+import TopBar from "@components/topBar/TopBar";
+import styles from "./Layout.module.css";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen layout">
-      <div>
-        <h1 className="text-2xl font-bold mt-16 text-center">Who sings?</h1>
-      </div>
+      <TopBar />
 
-      <div>{children}</div>
+      <div className={styles.layoutBody}>{children}</div>
 
-      <footer className="text-lg mt-auto">
-        <p>Made with determination by Davide Iaiunese</p>
-        <p>Powered by MusixMatch</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
