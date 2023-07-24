@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./features/user/userSlice";
+import quizReducer from "./features/quiz/quizSlice";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 import log from "@utils/log";
 import {
@@ -9,45 +10,49 @@ import {
 } from "./data/localDatabase";
 
 const userMiddleWare = (store: any) => (next: any) => (action: any) => {
-  log("middleware --> dispatching", action);
-  log("middleware --> store", store);
-  log("middleware --> next", next);
-  log("middleware --> action", action);
+  // log("middleware --> dispatching", action);
+  // log("middleware --> store", store);
+  // log("middleware --> next", next);
+  // log("middleware --> action", action);
 
   if (action.type === "userSlice/login") {
-    log(action.payload);
-    // find user in local db
-    // if user exists -> user its own propertirs to update global state
-    // if user does not exist -> create a new one in local db and use those
-    // properties to set global state
-    const userInLocalDb = getUserInLocalDbByName(action.payload.userName);
+    // log(action.payload);
+    const userInLocalDb = getUserInLocalDbByName(action.payload);
     const nameFromDispatchedLoginAction = action.payload;
     action.payload = {
       name: nameFromDispatchedLoginAction,
     };
 
     if (userInLocalDb) {
-      action.payload.personalGames = userInLocalDb.personalGames;
+      action.payload.personalScores = userInLocalDb.personalScores;
     } else {
       insertNewUserInLocalDb({
         name: nameFromDispatchedLoginAction,
-        personalGames: [],
+        personalScores: [],
       });
-      action.payload.personalGames = [];
+      action.payload.personalScores = [];
     }
 
-    log("middleware --> next", next);
-    log("middleware --> action", action);
-    return next(action);
+    // log("middleware --> next", next);
+    // log("middleware --> action", action);
   }
+  return next(action);
+};
+
+const quizMiddleWare = (store: any) => (next: any) => (action: any) => {
+  if (action.type === "quizSlice/endQuiz") {
+    log("quizMiddleWare");
+  }
+  return next(action);
 };
 
 export const store = configureStore({
   reducer: {
     userReducer,
+    quizReducer,
   },
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(userMiddleWare);
+    return getDefaultMiddleware().concat(userMiddleWare).concat(quizMiddleWare);
   },
 });
 
