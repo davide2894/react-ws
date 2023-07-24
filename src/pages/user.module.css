@@ -1,0 +1,12 @@
+.personalScoresEmpty {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.personalScoresEmpty p {
+  margin-bottom: 1rem;
+}
