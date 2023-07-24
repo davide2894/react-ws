@@ -1,0 +1,13 @@
+.backButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  border-radius: 6px;
+  background-color: var(--color-bunker);
+  width: 6rem;
+  height: 3rem;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
