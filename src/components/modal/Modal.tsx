@@ -1,8 +1,14 @@
 import { ReactNode, SyntheticEvent, useEffect } from "react";
 import log from "@utils/log";
+import styles from "./Modal.module.css";
 
-function Modal(props: { onClose: any; children?: ReactNode; mode?: string }) {
-  const { mode, onClose, children } = props;
+function Modal(props: {
+  text: string;
+  onClose: any;
+  children?: ReactNode;
+  mode?: string;
+}) {
+  const { text, onClose, children } = props;
 
   useEffect(() => {
     function handleEscapeKey(event: KeyboardEvent) {
@@ -27,22 +33,18 @@ function Modal(props: { onClose: any; children?: ReactNode; mode?: string }) {
 
   return (
     <div
-      className="modalOverlay absolute top-0 bottom-0 left-0 right-0 bg-transparent backdrop-blur-md z-10 flex flex-col items-center"
+      className={styles.modalOverlay}
       onClick={(evt) => closeModalOnClickOutside(evt)}>
-      <button
-        className="absolute top-0 right-0 w-[55px] h-[55px]"
-        onClick={onCloseClick}>
-        <span className="block w-[25px] h-[25px] bg-no-repeat bg-center bg-contain">
-          X
-        </span>
-      </button>
       <div
-        className="p-5 m-14  bg-gray-700 rounded max-w-[960px]"
+        className={styles.modal}
         onClick={(evt) => {
           evt.stopPropagation();
         }}>
+        <button className={styles.closeButton} onClick={onCloseClick}>
+          <span>X</span>
+        </button>
         <div>
-          <h2>Form title</h2>
+          <h2 className={styles.modalH2}>{props.text}</h2>
           {children}
         </div>
       </div>
