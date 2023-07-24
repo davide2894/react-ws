@@ -1,6 +1,7 @@
 import LoginForm from "@components/loginForm/LoginForm";
 import Modal from "@components/modal/Modal";
 import React, { useState } from "react";
+import styles from "./LoginButton.module.css";
 
 function LoginButton() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -8,12 +9,14 @@ function LoginButton() {
   return (
     <div>
       <button
-        className="bg-gray-300 hover:bg-green-700 w-16 h-16 text-black font-bold py-2 px-4 rounded"
+        className={styles.loginButton}
         onClick={() => setShowLoginModal(true)}>
         Login
       </button>
       {showLoginModal && (
-        <Modal onClose={() => setShowLoginModal(false)}>
+        <Modal
+          text="Log into the game"
+          onClose={() => setShowLoginModal(false)}>
           <LoginForm onLoginFormSubmit={() => setShowLoginModal(false)} />
         </Modal>
       )}
