@@ -1,16 +1,18 @@
 import BackButton from "@components/backButton/BackButton";
 import { useAppSelector } from "@store";
-import { prepareQuizQuestions } from "src/api/tracksApi";
 import LogoutButton from "@components/logoutButton/LogoutButton";
 import QuizStart from "@components/quizStart/QuizStart";
 import QuizEnd from "@components/quizEnd/QuizEnd";
 import QuizInGameCard from "@components/quizInGameCard/QuizInGameCard";
 import styles from "./quiz.module.css";
+import log from "@utils/log";
+import { prepareQuizQuestions } from "src/api/tracksApi";
 
 function Quiz(props: { questionsFetchedOnServerSide: any }) {
+  log({ propsQuestions: props.questionsFetchedOnServerSide });
   const quizState = useAppSelector((state) => state.quizReducer);
   const isQuizEnd =
-    quizState.numberOfQuestionsAnswered === quizState.questions.length;
+    quizState.numberOfQuestionsAnswered === quizState.questions?.length;
   const currentQuestion = getCurrentQuestion();
   let content;
 
@@ -30,7 +32,7 @@ function Quiz(props: { questionsFetchedOnServerSide: any }) {
   }
 
   function getCurrentQuestion() {
-    return quizState.questions.find((question: any) => !question.isAnswered);
+    return quizState.questions?.find((question: any) => !question.isAnswered);
   }
 
   return (

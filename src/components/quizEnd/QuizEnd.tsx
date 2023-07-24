@@ -13,8 +13,8 @@ function QuizEnd() {
   const quizState = useAppSelector((state) => state.quizReducer);
 
   function handleQuizEnd() {
-    router.push("quiz", { query: "replay" });
-    // TODO: test and see if you still need it --> dispatch(resetQuiz());
+    dispatch(resetQuiz());
+    router.push("quiz/play");
   }
 
   return (

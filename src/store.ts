@@ -8,6 +8,7 @@ import {
   insertNewUserInLocalDb,
   updateUserInLocalDb,
 } from "./data/localDatabase";
+import { prepareQuizQuestions } from "./api/tracksApi";
 
 const userMiddleWare = (store: any) => (next: any) => (action: any) => {
   // log("middleware --> dispatching", action);
@@ -40,7 +41,7 @@ const userMiddleWare = (store: any) => (next: any) => (action: any) => {
 };
 
 const quizMiddleWare = (store: any) => (next: any) => (action: any) => {
-  if (action.type === "quizSlice/endQuiz") {
+  if (action.type === "quizSlice/startQuiz") {
     log("quizMiddleWare");
   }
   return next(action);

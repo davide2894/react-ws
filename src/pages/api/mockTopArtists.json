@@ -1,0 +1,3835 @@
+{
+  "message": {
+    "header": { "status_code": 200, "execute_time": 0.26646900177002 },
+    "body": {
+      "artist_list": [
+        {
+          "artist": {
+            "artist_id": 24505463,
+            "artist_name": "Harry Styles",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30cf\u30ea\u30fc\u30b9\u30bf\u30a4\u30eb\u30ba"
+              }
+            ],
+            "artist_rating": 87,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2022-01-04T14:56:27Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 13796672,
+            "artist_name": "Annalisa",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "IT",
+            "artist_alias_list": [],
+            "artist_rating": 72,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-05-25T12:46:00Z",
+            "begin_date_year": "1985",
+            "begin_date": "1985-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 46971840,
+            "artist_name": "Angelina Mango",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 63,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2020-11-17T13:35:43Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 26920408,
+            "artist_name": "The Kolors",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 63,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2014-03-02T18:15:48Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 521759,
+            "artist_name": "Marco Mengoni",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "ZH",
+                  "translation": "\u99ac\u53ef\u66fc\u6208\u5c3c"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "IT",
+            "artist_alias_list": [
+              { "artist_alias": "\u99ac\u53ef\u66fc\u6208\u5c3c" }
+            ],
+            "artist_rating": 73,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-11-05T11:29:11Z",
+            "begin_date_year": "1988",
+            "begin_date": "1988-12-25",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 1039,
+            "artist_name": "Coldplay",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30b3\u30fc\u30eb\u30c9\u30d7\u30ec\u30a4"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "GB",
+            "artist_alias_list": [
+              { "artist_alias": "\u30b3\u30fc\u30eb\u30c9\u30d7\u30ec\u30a4" },
+              { "artist_alias": "ku wan yue dui" },
+              { "artist_alias": "The Coldplay" },
+              { "artist_alias": "Cold Play" },
+              { "artist_alias": "Coldplay" },
+              { "artist_alias": "Luser" }
+            ],
+            "artist_rating": 89,
+            "artist_twitter_url": "https://twitter.com/coldplay",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-11-05T11:24:57Z",
+            "begin_date_year": "1996",
+            "begin_date": "1996-09-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 46735705,
+            "artist_name": "M\u00e5neskin",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 84,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2020-10-30T08:25:21Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56152518,
+            "artist_name": "David Guetta feat. Anne-Marie & Coi Leray",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 53,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 10009,
+                    "artist_name": "David Guetta",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "FR",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30c7\u30f4\u30a3\u30c3\u30c9\u30b2\u30c3\u30bf"
+                      },
+                      { "artist_alias": "da wei ku ta" },
+                      { "artist_alias": "David Ghetta" },
+                      { "artist_alias": "Davie Guetta" },
+                      { "artist_alias": "David Guette" }
+                    ],
+                    "artist_rating": 68,
+                    "artist_twitter_url": "https://twitter.com/davidguetta",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:25:09Z",
+                    "begin_date_year": "1967",
+                    "begin_date": "1967-11-07",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 52254584,
+                    "artist_name": "Anne-Marie",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 66,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-11-17T15:13:27Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 41991085,
+                    "artist_name": "Coi Leray",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      { "artist_alias": "\u30b3\u30a4\u30ea\u30ec\u30a4" }
+                    ],
+                    "artist_rating": 63,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-11-09T13:19:51Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-04-06T22:05:34Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56347997,
+            "artist_name": "Fedez feat. Annalisa & Articolo 31",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 51,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 14353420,
+                    "artist_name": "Fedez",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "FEDERICO LEONARDO LUCIA" }
+                    ],
+                    "artist_rating": 59,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:31:00Z",
+                    "begin_date_year": "1989",
+                    "begin_date": "1989-10-15",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 13796672,
+                    "artist_name": "Annalisa",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [],
+                    "artist_rating": 72,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-05-25T12:46:00Z",
+                    "begin_date_year": "1985",
+                    "begin_date": "1985-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 16344,
+                    "artist_name": "Articolo 31",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [],
+                    "artist_rating": 63,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-11-17T08:16:46Z",
+                    "begin_date_year": "1990",
+                    "begin_date": "1990-00-00",
+                    "end_date_year": "2005",
+                    "end_date": "2005-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-05-24T22:04:39Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 36980939,
+            "artist_name": "Alfa",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 63,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2018-10-16T18:27:10Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 28164290,
+            "artist_name": "Pinguini Tattici Nucleari",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 83,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2022-10-20T14:39:27Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 11379743,
+            "artist_name": "Achille Lauro",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [{ "artist_alias": "Lauro De Marinis" }],
+            "artist_rating": 65,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-06-26T18:17:18Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 28708978,
+            "artist_name": "Jain",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 65,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2015-05-21T10:41:42Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56351828,
+            "artist_name": "Marco Mengoni feat. Elodie",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 46,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 521759,
+                    "artist_name": "Marco Mengoni",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "ZH",
+                          "translation": "\u99ac\u53ef\u66fc\u6208\u5c3c"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "\u99ac\u53ef\u66fc\u6208\u5c3c" }
+                    ],
+                    "artist_rating": 73,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:29:11Z",
+                    "begin_date_year": "1988",
+                    "begin_date": "1988-12-25",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 55288603,
+                    "artist_name": "Elodie",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 67,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-11-17T10:12:37Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-05-25T22:16:20Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 31015695,
+            "artist_name": "Peggy Gou",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 61,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2016-02-09T06:28:21Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 41888478,
+            "artist_name": "Ultimo",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 77,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2019-11-16T06:15:18Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 33491593,
+            "artist_name": "Dua Lipa",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              { "artist_alias": "\u30c7\u30e5\u30a2\u30ea\u30d1" },
+              { "artist_alias": "Dua Lipa" }
+            ],
+            "artist_rating": 83,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2017-04-28T14:30:50Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56181379,
+            "artist_name": "BLANCO feat. Mina",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 51,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 46247356,
+                    "artist_name": "BLANCO",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 75,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-08-27T15:48:50Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 10661,
+                    "artist_name": "Mina",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "KO",
+                          "translation": "\ubbfc\uc544"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "\u30df\u30fc\u30ca" },
+                      { "artist_alias": "\ubbfc\uc544" },
+                      { "artist_alias": "miss_stacy" },
+                      { "artist_alias": "Mina" }
+                    ],
+                    "artist_rating": 64,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2019-01-25T01:41:38Z",
+                    "begin_date_year": "1940",
+                    "begin_date": "1940-03-25",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-04-13T22:04:37Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56478162,
+            "artist_name": "Boomdabash feat. Paola & Chiara",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 41,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 24691336,
+                    "artist_name": "Boomdabash",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 63,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-01-05T10:23:22Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33850484,
+                    "artist_name": "Paola & Chiara",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "Paoloa & Chiara" },
+                      { "artist_alias": "Paloa & Chiara" },
+                      { "artist_alias": "Paola E Chiara" }
+                    ],
+                    "artist_rating": 49,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-02-01T13:54:52Z",
+                    "begin_date_year": "1996",
+                    "begin_date": "1996-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-15T23:16:26Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56542937,
+            "artist_name": "Fred De Palma feat. Ana Mena & Takagi & Ketra",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 35,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 27222429,
+                    "artist_name": "Fred De Palma",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      { "artist_alias": "Federico Palana" }
+                    ],
+                    "artist_rating": 59,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2014-03-07T18:31:51Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 25640480,
+                    "artist_name": "Ana Mena",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 50,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2014-01-09T05:01:34Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33757816,
+                    "artist_name": "Takagi & Ketra",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 35,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-03-26T20:25:04Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-07-06T22:24:59Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 38146,
+            "artist_name": "EMMA",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "GB",
+            "artist_alias_list": [
+              { "artist_alias": "\u30a8\u30de" },
+              { "artist_alias": "Emma Louise Booth" }
+            ],
+            "artist_rating": 52,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2019-04-25T04:52:50Z",
+            "begin_date_year": "1974",
+            "begin_date": "1974-08-02",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56454869,
+            "artist_name": "Tony Effe feat. Emma & Takagi & Ketra",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 45,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 33828174,
+                    "artist_name": "Tony Effe",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 57,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-06-29T22:00:30Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 13639930,
+                    "artist_name": "Emma",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "JA",
+                          "translation": "EMMA"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [{ "artist_alias": "EMMA" }],
+                    "artist_rating": 52,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:29:18Z",
+                    "begin_date_year": "1984",
+                    "begin_date": "1984-05-25",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33757816,
+                    "artist_name": "Takagi & Ketra",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 35,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-03-26T20:25:04Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-08T23:02:00Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56489996,
+            "artist_name": "Merk & Kremont feat. Tananai & Marracash",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 43,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 36664730,
+                    "artist_name": "Merk & Kremont",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 28,
+                    "artist_twitter_url": "https://twitter.com/MerkandKremont",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-12-14T01:45:20Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 36977578,
+                    "artist_name": "Tananai",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 76,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-10-14T18:23:38Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 383004,
+                    "artist_name": "Marracash",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "Bartolo Fabio Rizzo" },
+                      { "artist_alias": "Fabio Rizzo" },
+                      { "artist_alias": "Fabio Bartolo Rizzo" }
+                    ],
+                    "artist_rating": 72,
+                    "artist_twitter_url": "https://twitter.com/marracash",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-02-23T14:33:35Z",
+                    "begin_date_year": "1979",
+                    "begin_date": "1979-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-21T22:22:22Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56595847,
+            "artist_name": "Travis Scott feat. Bad Bunny & The Weeknd",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 43,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 14382416,
+                    "artist_name": "Travis Scott",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "US",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30c8\u30e9\u30f4\u30a3\u30b9 \u30b9\u30b3\u30c3\u30c8"
+                      },
+                      { "artist_alias": "Travi$ Scott" },
+                      { "artist_alias": "Travis Scott" }
+                    ],
+                    "artist_rating": 79,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-11-09T11:40:41Z",
+                    "begin_date_year": "1992",
+                    "begin_date": "1992-04-30",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33491954,
+                    "artist_name": "Bad Bunny",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "JA",
+                          "translation": "\u30d0\u30c3\u30c9\u30fb\u30d0\u30cb\u30fc"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30d0\u30c3\u30c9\u30fb\u30d0\u30cb\u30fc"
+                      },
+                      { "artist_alias": "Benito Antonio Mart\u00ednez Ocasio" }
+                    ],
+                    "artist_rating": 89,
+                    "artist_twitter_url": "https://twitter.com/sanbenito",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-06-23T22:20:30Z",
+                    "begin_date_year": "2016",
+                    "begin_date": "2016-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 13937035,
+                    "artist_name": "The Weeknd",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "JA",
+                          "translation": "\u30b6\u30fb\u30a6\u30a3\u30fc\u30af\u30a8\u30f3\u30c9"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "CA",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30b6\u30fb\u30a6\u30a3\u30fc\u30af\u30a8\u30f3\u30c9"
+                      },
+                      { "artist_alias": "The Weekend" },
+                      { "artist_alias": "The Weeknd" }
+                    ],
+                    "artist_rating": 91,
+                    "artist_twitter_url": "https://twitter.com/theweekndxo",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-05-18T09:47:29Z",
+                    "begin_date_year": "1990",
+                    "begin_date": "1990-02-16",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-07-21T04:01:02Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 25781571,
+            "artist_name": "Mr.Rain",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              { "artist_alias": "mr rain" },
+              { "artist_alias": "mattia balardi" }
+            ],
+            "artist_rating": 68,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2020-03-13T08:41:49Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 24419189,
+            "artist_name": "Rocco Hunt",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "IT",
+            "artist_alias_list": [{ "artist_alias": "Rocco Pagliarulo" }],
+            "artist_rating": 65,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2022-11-07T11:10:39Z",
+            "begin_date_year": "1994",
+            "begin_date": "1994-11-21",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 14365131,
+            "artist_name": "will.i.am feat. Britney Spears",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 42,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 33492013,
+                    "artist_name": "will.i.am",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "JA",
+                          "translation": "\u30a6\u30a3\u30eb\u30fb\u30a2\u30a4\u30fb\u30a2\u30e0"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "US",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30a6\u30a3\u30eb\u30fb\u30a2\u30a4\u30fb\u30a2\u30e0"
+                      },
+                      { "artist_alias": "Will.iam" },
+                      { "artist_alias": "will.i.am of The Black Eyed Peas" },
+                      { "artist_alias": "Will.I.Am (from black eyed peas)" },
+                      { "artist_alias": "Will I am" }
+                    ],
+                    "artist_rating": 13,
+                    "artist_twitter_url": "https://twitter.com/iamwill/",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-04-28T23:18:43Z",
+                    "begin_date_year": "1975",
+                    "begin_date": "1975-03-15",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33491420,
+                    "artist_name": "Britney Spears",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "US",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30d6\u30ea\u30c8\u30cb\u30fc \u30b9\u30d4\u30a2\u30fc\u30ba"
+                      },
+                      { "artist_alias": "Bretney Spears" },
+                      { "artist_alias": "B. Spears" },
+                      { "artist_alias": "Brittany Spears" },
+                      { "artist_alias": "Briteny Spears" },
+                      { "artist_alias": "Brittney Spears" },
+                      { "artist_alias": "Britney Jean Spears" },
+                      { "artist_alias": "Britney Spears" }
+                    ],
+                    "artist_rating": 78,
+                    "artist_twitter_url": "https://twitter.com/britneyspears",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-04-28T23:17:49Z",
+                    "begin_date_year": "1981",
+                    "begin_date": "1981-12-02",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2016-03-26T03:07:35Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 29947463,
+            "artist_name": "Ernia",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [{ "artist_alias": "Matteo Professione" }],
+            "artist_rating": 71,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2016-02-17T07:33:05Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 45793353,
+            "artist_name": "Madame",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 71,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-02-24T09:19:47Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 55203694,
+            "artist_name": "Coez feat. Frah Quintale",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 45,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 24442337,
+                    "artist_name": "Coez",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "Silvano Albanese" }
+                    ],
+                    "artist_rating": 71,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2014-03-20T00:30:34Z",
+                    "begin_date_year": "1983",
+                    "begin_date": "1983-07-11",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 31864616,
+                    "artist_name": "Frah Quintale",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 72,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-05-24T09:35:37Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T12:01:09Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 224210,
+            "artist_name": "Miley Cyrus",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "EN",
+                  "translation": "MILEY CYRUS"
+                }
+              },
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30de\u30a4\u30ea\u30fc\u30fb\u30b5\u30a4\u30e9\u30b9"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "US",
+            "artist_alias_list": [
+              { "artist_alias": "MILEY CYRUS" },
+              {
+                "artist_alias": "\u30de\u30a4\u30ea\u30fc\u30fb\u30b5\u30a4\u30e9\u30b9"
+              },
+              { "artist_alias": "Hannah Montana" },
+              { "artist_alias": "Destiny Hope Cyrus" },
+              { "artist_alias": "Miley Cyrus" }
+            ],
+            "artist_rating": 85,
+            "artist_twitter_url": "https://twitter.com/mileycyrus",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2018-07-17T02:17:28Z",
+            "begin_date_year": "1992",
+            "begin_date": "1992-11-23",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56134421,
+            "artist_name": "Purple Disco Machine feat. Kungs",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 44,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 24451934,
+                    "artist_name": "Purple Disco Machine",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "DE",
+                    "artist_alias_list": [],
+                    "artist_rating": 58,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-09-12T17:21:22Z",
+                    "begin_date_year": "2009",
+                    "begin_date": "2009-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 28649019,
+                    "artist_name": "Kungs",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 60,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-04-02T02:25:33Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-03-30T16:01:50Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 34389981,
+            "artist_name": "Elettra Lamborghini",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30a8\u30ec\u30c3\u30c8\u30e9\u30e9\u30f3\u30dc\u30eb\u30ae\u30fc\u30cb"
+              }
+            ],
+            "artist_rating": 55,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2017-09-21T22:01:47Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56332961,
+            "artist_name": "AVA feat. ANNA & Capo Plaza",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 50,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 35379029,
+                    "artist_name": "AVA",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 1,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2019-11-28T16:08:04Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 44661279,
+                    "artist_name": "ANNA",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 51,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-03-05T09:47:31Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 29249822,
+                    "artist_name": "Capo Plaza",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 67,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-12-19T14:20:42Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-05-18T22:09:47Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56454608,
+            "artist_name": "Irama feat. Rkomi & Shablo",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 45,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 28877462,
+                    "artist_name": "Irama",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 70,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-11-30T13:35:12Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 31973763,
+                    "artist_name": "Rkomi",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      { "artist_alias": "MIRKO MANUELE MARTORANA" }
+                    ],
+                    "artist_rating": 62,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-07-09T16:47:34Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 13779756,
+                    "artist_name": "Shablo",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "Pablo Miguel Lombroni Capalbo" }
+                    ],
+                    "artist_rating": 10,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2014-03-20T14:30:55Z",
+                    "begin_date_year": "1980",
+                    "begin_date": "1980-11-17",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-08T22:19:00Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 33258132,
+            "artist_name": "Lewis Capaldi",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              { "artist_alias": "hao zi ya" },
+              { "artist_alias": "Leem" }
+            ],
+            "artist_rating": 80,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2017-03-11T22:33:14Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 36977578,
+            "artist_name": "Tananai",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 76,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2018-10-14T18:23:38Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56477002,
+            "artist_name": "Sophie and the Giants feat. Purple Disco Machine",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 34,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 31685195,
+                    "artist_name": "Sophie and the Giants",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 40,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-04-19T13:18:57Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 24451934,
+                    "artist_name": "Purple Disco Machine",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "DE",
+                    "artist_alias_list": [],
+                    "artist_rating": 58,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-09-12T17:21:22Z",
+                    "begin_date_year": "2009",
+                    "begin_date": "2009-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-15T15:17:22Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 269346,
+            "artist_name": "OneRepublic",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "US",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30ef\u30f3\u30ea\u30d1\u30d6\u30ea\u30c4\u30af"
+              },
+              { "artist_alias": "Gong He Shi Dai" },
+              { "artist_alias": "Timbaland presents OneRepublic" },
+              { "artist_alias": "One Republic" },
+              { "artist_alias": "OneRepublic" }
+            ],
+            "artist_rating": 86,
+            "artist_twitter_url": "https://twitter.com/OneRepublic",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2015-01-07T08:21:52Z",
+            "begin_date_year": "2004",
+            "begin_date": "2004-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 25031479,
+            "artist_name": "Lazza",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 76,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-12-18T23:28:00Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 21903,
+            "artist_name": "Tiziano Ferro",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "IT",
+            "artist_alias_list": [
+              { "artist_alias": "Tiziano Ferro - Alex Inc \u00a9" },
+              { "artist_alias": "Tiziano Fero" }
+            ],
+            "artist_rating": 74,
+            "artist_twitter_url": "https://twitter.com/tizianoferro",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-11-05T11:25:29Z",
+            "begin_date_year": "1980",
+            "begin_date": "1980-02-21",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56491836,
+            "artist_name": "The Blessed Madonna feat. Jacob Lusk & Gabriels",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 22,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 46202897,
+                    "artist_name": "The Blessed Madonna",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 40,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-08-13T16:04:34Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 30926539,
+                    "artist_name": "Jacob Lusk",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 6,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-01-31T18:17:52Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 52309720,
+                    "artist_name": "Gabriels",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 38,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-01-22T11:30:17Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-22T15:47:30Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 24429260,
+            "artist_name": "Thirty Seconds To Mars",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "EN",
+                  "translation": "Thirty Seconds to Mars"
+                }
+              },
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30b5\u30fc\u30c6\u30a3\u30fc\u30fb\u30bb\u30ab\u30f3\u30ba\u30fb\u30c8\u30a5\u30fb\u30de\u30fc\u30ba"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "US",
+            "artist_alias_list": [
+              { "artist_alias": "Thirty Seconds to Mars" },
+              {
+                "artist_alias": "\u30b5\u30fc\u30c6\u30a3\u30fc\u30fb\u30bb\u30ab\u30f3\u30ba\u30fb\u30c8\u30a5\u30fb\u30de\u30fc\u30ba"
+              },
+              { "artist_alias": "30 Miao Shang Huo Xing" },
+              { "artist_alias": "30 Second to Mars" }
+            ],
+            "artist_rating": 72,
+            "artist_twitter_url": "https://twitter.com/30SECONDSTOMARS",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-11-25T10:51:21Z",
+            "begin_date_year": "1998",
+            "begin_date": "1998-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56454701,
+            "artist_name": "Fabio Rovazzi feat. Orietta Berti",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 31,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 31561364,
+                    "artist_name": "Fabio Rovazzi",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 40,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-03-24T07:28:26Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 122557,
+                    "artist_name": "Orietta Berti",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [],
+                    "artist_rating": 38,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:27:27Z",
+                    "begin_date_year": "1945",
+                    "begin_date": "1945-06-01",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-08T22:29:45Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 38192062,
+            "artist_name": "Mara Sattei",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 61,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2019-04-17T08:11:54Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 204,
+            "artist_name": "Blur",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30d6\u30e9\u30fc"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "GB",
+            "artist_alias_list": [
+              { "artist_alias": "\u30d6\u30e9\u30fc" },
+              { "artist_alias": "wu dian" },
+              { "artist_alias": "Dan Abnormal" },
+              { "artist_alias": "Albarn James Coxon Rowntree" }
+            ],
+            "artist_rating": 70,
+            "artist_twitter_url": "https://twitter.com/blurofficial",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2016-06-30T10:50:01Z",
+            "begin_date_year": "1990",
+            "begin_date": "1990-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 54080072,
+            "artist_name": "Bizarrap feat. Quevedo",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 59,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 47261529,
+                    "artist_name": "Bizarrap",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 45,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-01-28T16:28:40Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 34112763,
+                    "artist_name": "Quevedo",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 71,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-08-13T05:43:29Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T12:09:17Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 55671664,
+            "artist_name": "Jung Kook",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 60,
+            "artist_twitter_url": "https://twitter.com/bts_twt",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2022-11-25T04:53:15Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 37586225,
+            "artist_name": "Tommaso Paradiso",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 58,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2019-01-25T00:21:43Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 37143467,
+            "artist_name": "Rhove",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 63,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2018-11-16T21:17:06Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 32153100,
+            "artist_name": "Olivia Rodrigo",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              { "artist_alias": "Olivia Rodrigo" },
+              { "artist_alias": "Matt Cornett" }
+            ],
+            "artist_rating": 81,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-12-02T10:15:59Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56510273,
+            "artist_name": "Drillionaire feat. Sfera Ebbasta & Shiva",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 41,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 34692341,
+                    "artist_name": "Drillionaire",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 1,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-06-30T08:04:36Z",
+                    "begin_date_year": "1993",
+                    "begin_date": "1993-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 28486233,
+                    "artist_name": "Sfera Ebbasta",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 72,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-02-23T11:31:05Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33536709,
+                    "artist_name": "Shiva",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      { "artist_alias": "\u30b7\u30f4\u30a1" }
+                    ],
+                    "artist_rating": 70,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2019-03-27T23:09:24Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-29T23:09:45Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 253,
+            "artist_name": "Aqua",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "AQUA"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "DK",
+            "artist_alias_list": [
+              { "artist_alias": "AQUA" },
+              { "artist_alias": "shuidingdangyuedui" },
+              { "artist_alias": "Aqua???" },
+              { "artist_alias": "\u30a2\u30af\u30a2" },
+              { "artist_alias": "(Aqua)" }
+            ],
+            "artist_rating": 61,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2016-12-16T20:08:05Z",
+            "begin_date_year": "1994",
+            "begin_date": "1994-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56510272,
+            "artist_name": "Drillionaire feat. ANNA, Lazza, Tony Effe & Benny Benassi",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 40,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 34692341,
+                    "artist_name": "Drillionaire",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 1,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-06-30T08:04:36Z",
+                    "begin_date_year": "1993",
+                    "begin_date": "1993-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 44661279,
+                    "artist_name": "ANNA",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 51,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-03-05T09:47:31Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 25031479,
+                    "artist_name": "Lazza",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 76,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-12-18T23:28:00Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33828174,
+                    "artist_name": "Tony Effe",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 57,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-06-29T22:00:30Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 40556,
+                    "artist_name": "Benny Benassi",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "Benny Bee" },
+                      { "artist_alias": "Benny Bennasi" },
+                      { "artist_alias": "Benny Banassi" },
+                      { "artist_alias": "Benni Benassi" }
+                    ],
+                    "artist_rating": 49,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:25:38Z",
+                    "begin_date_year": "1967",
+                    "begin_date": "1967-07-13",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-29T23:09:45Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 14382559,
+            "artist_name": "Clementino",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "IT",
+            "artist_alias_list": [],
+            "artist_rating": 56,
+            "artist_twitter_url": "https://twitter.com/CLEMENTINOIENA",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-11-05T11:30:19Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 39903867,
+            "artist_name": "TROPICO",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 38,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2019-09-05T22:22:56Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 53771970,
+            "artist_name": "Boomdabash feat. Annalisa",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 29,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 24691336,
+                    "artist_name": "Boomdabash",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 63,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-01-05T10:23:22Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 13796672,
+                    "artist_name": "Annalisa",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [],
+                    "artist_rating": 72,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-05-25T12:46:00Z",
+                    "begin_date_year": "1985",
+                    "begin_date": "1985-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T12:35:04Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 46529223,
+            "artist_name": "Stefano Lentini feat. Icaro, Lolloflow & Raiz",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 44,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 26439781,
+                    "artist_name": "Stefano Lentini",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 44,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2014-01-28T11:04:53Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 46529221,
+                    "artist_name": "Icaro",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 1,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-10-04T20:22:21Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 45055995,
+                    "artist_name": "Lolloflow",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 9,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-04-18T14:37:39Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 28926157,
+                    "artist_name": "Raiz",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 7,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-07-17T06:22:38Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T14:27:49Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 24847353,
+            "artist_name": "Ciccio Merolla",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 51,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2013-11-18T01:00:51Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 33491954,
+            "artist_name": "Bad Bunny",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30d0\u30c3\u30c9\u30fb\u30d0\u30cb\u30fc"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              { "artist_alias": "\u30d0\u30c3\u30c9\u30fb\u30d0\u30cb\u30fc" },
+              { "artist_alias": "Benito Antonio Mart\u00ednez Ocasio" }
+            ],
+            "artist_rating": 89,
+            "artist_twitter_url": "https://twitter.com/sanbenito",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2022-06-23T22:20:30Z",
+            "begin_date_year": "2016",
+            "begin_date": "2016-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 11221211,
+            "artist_name": "Christina Perri",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "US",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30af\u30ea\u30b9\u30c6\u30a3\u30fc\u30ca \u30da\u30eb\u30ea"
+              },
+              { "artist_alias": "kelisidina peili" },
+              { "artist_alias": "Adam Lathrum" },
+              { "artist_alias": "Alessio Digiambattista" },
+              { "artist_alias": "Amber Elliot" },
+              { "artist_alias": "Bushwalla" },
+              { "artist_alias": "Chad Copelin" },
+              { "artist_alias": "Chris Tabron" },
+              { "artist_alias": "Christina Perri" },
+              { "artist_alias": "David hodges" },
+              { "artist_alias": "David Ryan Harris" },
+              { "artist_alias": "Elmo Lovano" },
+              { "artist_alias": "James Krausse" },
+              { "artist_alias": "Jen Kuhn" },
+              { "artist_alias": "Jenni Tarma" },
+              { "artist_alias": "Johnny Hanson" },
+              { "artist_alias": "Jon Titterington" },
+              { "artist_alias": "Justin Hergett" },
+              { "artist_alias": "LP" },
+              { "artist_alias": "Martin Johnson" },
+              { "artist_alias": "Michell" }
+            ],
+            "artist_rating": 67,
+            "artist_twitter_url": "https://twitter.com/christinaperri",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-08-04T07:39:21Z",
+            "begin_date_year": "1986",
+            "begin_date": "1986-08-19",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 50410132,
+            "artist_name": "Elton John feat. Dua Lipa & PNAU",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 55,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 136,
+                    "artist_name": "Elton John",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "GB",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30a8\u30eb\u30c8\u30f3 \u30b8\u30e7\u30f3"
+                      },
+                      { "artist_alias": "Sir Elton John" },
+                      { "artist_alias": "Elton Jphn" },
+                      { "artist_alias": "Elthon John" },
+                      { "artist_alias": "E. John" },
+                      { "artist_alias": "John" },
+                      { "artist_alias": " Elton" },
+                      { "artist_alias": "Sir Elton Hercules John" },
+                      { "artist_alias": "John Elton" },
+                      { "artist_alias": "Reginald Kenneth Dwight" },
+                      { "artist_alias": "Elton John" },
+                      { "artist_alias": "DORA" }
+                    ],
+                    "artist_rating": 77,
+                    "artist_twitter_url": "https://twitter.com/eltonjohndotcom",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-11-20T14:06:34Z",
+                    "begin_date_year": "1947",
+                    "begin_date": "1947-03-25",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 33491593,
+                    "artist_name": "Dua Lipa",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      { "artist_alias": "\u30c7\u30e5\u30a2\u30ea\u30d1" },
+                      { "artist_alias": "Dua Lipa" }
+                    ],
+                    "artist_rating": 83,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-04-28T14:30:50Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 13926,
+                    "artist_name": "PNAU",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "AU",
+                    "artist_alias_list": [
+                      { "artist_alias": "\u30d7\u30ca\u30a6" },
+                      { "artist_alias": "PNAU" }
+                    ],
+                    "artist_rating": 35,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-10-12T17:53:09Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T12:42:40Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 88,
+            "artist_name": "George Michael",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30b8\u30e7\u30fc\u30b8\u30fb\u30de\u30a4\u30b1\u30eb"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "GB",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30b8\u30e7\u30fc\u30b8\u30fb\u30de\u30a4\u30b1\u30eb"
+              },
+              { "artist_alias": "qiao zhi mai ke er" },
+              { "artist_alias": "Michael George" },
+              { "artist_alias": "George Micheal" },
+              { "artist_alias": "Georg Michael" },
+              { "artist_alias": "Michael" },
+              { "artist_alias": " George" },
+              { "artist_alias": "George Michael" },
+              { "artist_alias": "qing bai" }
+            ],
+            "artist_rating": 69,
+            "artist_twitter_url": "https://twitter.com/GeorgeMOfficial",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2016-12-26T07:01:19Z",
+            "begin_date_year": "1963",
+            "begin_date": "1963-06-25",
+            "end_date_year": "2016",
+            "end_date": "2016-12-25"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 455,
+            "artist_name": "Haddaway",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "HADDAWAY"
+                }
+              },
+              {
+                "artist_name_translation": {
+                  "language": "ZH",
+                  "translation": "\u6d77\u5fb7\u5a01"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "DE",
+            "artist_alias_list": [
+              { "artist_alias": "HADDAWAY" },
+              { "artist_alias": "\u6d77\u5fb7\u5a01" },
+              { "artist_alias": "Haddaway" }
+            ],
+            "artist_rating": 61,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2018-02-02T07:51:07Z",
+            "begin_date_year": "1965",
+            "begin_date": "1965-01-09",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 53887467,
+            "artist_name": "Rocco Hunt feat. Elettra Lamborghini & Lola Indigo",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 42,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 24419189,
+                    "artist_name": "Rocco Hunt",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      { "artist_alias": "Rocco Pagliarulo" }
+                    ],
+                    "artist_rating": 65,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-11-07T11:10:39Z",
+                    "begin_date_year": "1994",
+                    "begin_date": "1994-11-21",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 34389981,
+                    "artist_name": "Elettra Lamborghini",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30a8\u30ec\u30c3\u30c8\u30e9\u30e9\u30f3\u30dc\u30eb\u30ae\u30fc\u30cb"
+                      }
+                    ],
+                    "artist_rating": 55,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-09-21T22:01:47Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 36358837,
+                    "artist_name": "Lola Indigo",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 47,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2021-11-19T08:59:13Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T12:36:33Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 13937035,
+            "artist_name": "The Weeknd",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30b6\u30fb\u30a6\u30a3\u30fc\u30af\u30a8\u30f3\u30c9"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "CA",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30b6\u30fb\u30a6\u30a3\u30fc\u30af\u30a8\u30f3\u30c9"
+              },
+              { "artist_alias": "The Weekend" },
+              { "artist_alias": "The Weeknd" }
+            ],
+            "artist_rating": 91,
+            "artist_twitter_url": "https://twitter.com/theweekndxo",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-05-18T09:47:29Z",
+            "begin_date_year": "1990",
+            "begin_date": "1990-02-16",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 16648,
+            "artist_name": "Gala",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "ZH",
+                  "translation": "GALA"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "IT",
+            "artist_alias_list": [
+              { "artist_alias": "\u30ac\u30e9" },
+              { "artist_alias": "GALA" },
+              { "artist_alias": "Gala Rizzatto" }
+            ],
+            "artist_rating": 58,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2018-10-31T03:33:08Z",
+            "begin_date_year": "1975",
+            "begin_date": "1975-09-06",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 55002656,
+            "artist_name": "Rema",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 75,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2023-06-07T10:17:15Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 54210735,
+            "artist_name": "Jimmy Sax",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 39,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2022-07-14T10:29:08Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 426,
+            "artist_name": "Eminem",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "US",
+            "artist_alias_list": [
+              { "artist_alias": "\u3048\u307f\u306d\u3080" },
+              { "artist_alias": "Ominem" },
+              { "artist_alias": "The Real Slim Shady" },
+              { "artist_alias": "Mine" },
+              { "artist_alias": "TONEY.L" }
+            ],
+            "artist_rating": 87,
+            "artist_twitter_url": "https://twitter.com/eminem",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2014-05-28T14:19:26Z",
+            "begin_date_year": "1972",
+            "begin_date": "1972-10-17",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56350302,
+            "artist_name": "Gabry Ponte feat. HOSANNA",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 31,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 17142,
+                    "artist_name": "Gabry Ponte",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30ac\u30d6\u30ea\u30fc \u30dd\u30f3\u30c6"
+                      },
+                      { "artist_alias": "DJ Ponte" },
+                      { "artist_alias": "Grabry Ponte" },
+                      { "artist_alias": "Gabriele Ponte" }
+                    ],
+                    "artist_rating": 50,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:25:25Z",
+                    "begin_date_year": "1973",
+                    "begin_date": "1973-04-20",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 54812380,
+                    "artist_name": "HOSANNA",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 1,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-09-08T22:28:36Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-05-25T16:13:14Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56085249,
+            "artist_name": "Sophie and the Giants feat. MEARSY",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 39,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 31685195,
+                    "artist_name": "Sophie and the Giants",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 40,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-04-19T13:18:57Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 56085248,
+                    "artist_name": "MEARSY",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 1,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-03-10T00:43:26Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-03-10T00:43:26Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56181315,
+            "artist_name": "AriBeatz feat. Ozuna, GIMS & Sfera Ebbasta",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 46,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 33225019,
+                    "artist_name": "AriBeatz",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 16,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-03-03T19:39:08Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 56116560,
+                    "artist_name": "Ozuna",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 70,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-03-23T02:32:45Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 55778056,
+                    "artist_name": "GIMS",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 61,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-01-10T15:05:41Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 28486233,
+                    "artist_name": "Sfera Ebbasta",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 72,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-02-23T11:31:05Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-04-13T21:31:41Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 46039319,
+            "artist_name": "Bresh feat. SHUNE",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 55,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 31973766,
+                    "artist_name": "Bresh",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 55,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-07-09T16:47:34Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 44782071,
+                    "artist_name": "SHUNE",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 8,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2020-03-19T10:47:26Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T14:20:17Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 1109,
+            "artist_name": "4 Non Blondes",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "US",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30d5\u30aa-\u30ce\u30f3\u30d6\u30ed\u30f3\u30ba"
+              },
+              { "artist_alias": "Four Non Blondes" },
+              { "artist_alias": "4Non Blondes" },
+              { "artist_alias": "4 Non-Blondes" }
+            ],
+            "artist_rating": 62,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2015-12-09T16:45:08Z",
+            "begin_date_year": "1989",
+            "begin_date": "1989-00-00",
+            "end_date_year": "1994",
+            "end_date": "1994-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 52026767,
+            "artist_name": "Rhove feat. Madfingerz",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 49,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 37143467,
+                    "artist_name": "Rhove",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 63,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-11-16T21:17:06Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 36391525,
+                    "artist_name": "Madfingerz",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 9,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-07-24T17:13:00Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T13:10:02Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 28534664,
+            "artist_name": "ZAYN",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              { "artist_alias": "zyan" },
+              { "artist_alias": "ZAYN" }
+            ],
+            "artist_rating": 70,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2021-01-22T09:15:59Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 40515404,
+            "artist_name": "Calvin Harris feat. Ellie Goulding",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 46,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 33491423,
+                    "artist_name": "Calvin Harris",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "GB",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u304b\u308b\u3073\u3093\u306f\u308a\u3059"
+                      },
+                      { "artist_alias": "jia er wen ha li si" },
+                      {
+                        "artist_alias": "\u30ab\u30eb\u30f4\u30a3\u30f3\u30fb\u30cf\u30ea\u30b9"
+                      },
+                      { "artist_alias": "Adam Richard Wiles" }
+                    ],
+                    "artist_rating": 63,
+                    "artist_twitter_url": "https://twitter.com/calvinharris",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-08-27T18:33:42Z",
+                    "begin_date_year": "1984",
+                    "begin_date": "1984-01-17",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 491258,
+                    "artist_name": "Ellie Goulding",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "JA",
+                          "translation": "\u30a8\u30ea\u30fc\u30fb\u30b4\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "GB",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u30a8\u30ea\u30fc\u30fb\u30b4\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0"
+                      },
+                      { "artist_alias": "ai li gu er ding" },
+                      { "artist_alias": "Elena Jane Goulding" },
+                      { "artist_alias": "Ellie Goulding" },
+                      { "artist_alias": "Mountain" }
+                    ],
+                    "artist_rating": 73,
+                    "artist_twitter_url": "https://twitter.com/elliegoulding",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-11-05T11:28:58Z",
+                    "begin_date_year": "1986",
+                    "begin_date": "1986-12-30",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-02-14T16:30:56Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56472813,
+            "artist_name": "Ana Mena feat. Gu\u00e8",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 36,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 25640480,
+                    "artist_name": "Ana Mena",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 50,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2014-01-09T05:01:34Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 51053077,
+                    "artist_name": "Gu\u00e8",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [
+                      { "artist_alias": "Gu\u00e8 Pequeno" },
+                      { "artist_alias": "Gue' Pequeno" }
+                    ],
+                    "artist_rating": 65,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2023-01-17T14:47:31Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-14T08:21:02Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 29247465,
+            "artist_name": "Billie Eilish",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "JA",
+                  "translation": "\u30d3\u30ea\u30fc\u30fb\u30a2\u30a4\u30ea\u30c3\u30b7\u30e5"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [
+              {
+                "artist_alias": "\u30d3\u30ea\u30fc\u30fb\u30a2\u30a4\u30ea\u30c3\u30b7\u30e5"
+              },
+              { "artist_alias": "Az\u54c8\u5c14" },
+              { "artist_alias": "Billie Eilish" }
+            ],
+            "artist_rating": 87,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2015-12-19T12:38:24Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56580024,
+            "artist_name": "The Avener feat. White Shrts",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 1,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 24865111,
+                    "artist_name": "The Avener",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "FR",
+                    "artist_alias_list": [],
+                    "artist_rating": 43,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-06-30T10:10:33Z",
+                    "begin_date_year": "1987",
+                    "begin_date": "1987-01-23",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 36815349,
+                    "artist_name": "White Shrts",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 20,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2018-09-19T10:25:42Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-07-13T23:35:08Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56595208,
+            "artist_name": "Il Pagante feat. Raffa Fl",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 18,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 25025633,
+                    "artist_name": "Il Pagante",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "IT",
+                    "artist_alias_list": [],
+                    "artist_rating": 58,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2015-12-09T17:59:38Z",
+                    "begin_date_year": "2010",
+                    "begin_date": "2010-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 24457916,
+                    "artist_name": "Raffa Fl",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 49,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2013-09-19T20:06:36Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-07-20T23:00:53Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 56493407,
+            "artist_name": "Nicki Minaj feat. Ice Spice & Aqua",
+            "artist_name_translation_list": [],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [],
+            "artist_rating": 49,
+            "artist_twitter_url": "",
+            "artist_credits": {
+              "artist_list": [
+                {
+                  "artist": {
+                    "artist_id": 33492007,
+                    "artist_name": "Nicki Minaj",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "US",
+                    "artist_alias_list": [
+                      {
+                        "artist_alias": "\u306b\u3063\u304d\u30fc\u307f\u306a\u30fc\u3058\u3085"
+                      },
+                      { "artist_alias": "Nikki Minaj" },
+                      { "artist_alias": "Nicki Minai" },
+                      { "artist_alias": "ONIKA MARAJ" },
+                      { "artist_alias": "Onika Tanya Maraj" },
+                      { "artist_alias": "Nicki Minaj" }
+                    ],
+                    "artist_rating": 76,
+                    "artist_twitter_url": "https://twitter.com/nickiminaj",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2017-04-28T23:17:49Z",
+                    "begin_date_year": "1982",
+                    "begin_date": "1982-12-08",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 54353377,
+                    "artist_name": "Ice Spice",
+                    "artist_name_translation_list": [],
+                    "artist_comment": "",
+                    "artist_country": "",
+                    "artist_alias_list": [],
+                    "artist_rating": 65,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2022-12-01T10:03:52Z",
+                    "begin_date_year": "",
+                    "begin_date": "0000-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                },
+                {
+                  "artist": {
+                    "artist_id": 253,
+                    "artist_name": "Aqua",
+                    "artist_name_translation_list": [
+                      {
+                        "artist_name_translation": {
+                          "language": "JA",
+                          "translation": "AQUA"
+                        }
+                      }
+                    ],
+                    "artist_comment": "",
+                    "artist_country": "DK",
+                    "artist_alias_list": [
+                      { "artist_alias": "AQUA" },
+                      { "artist_alias": "shuidingdangyuedui" },
+                      { "artist_alias": "Aqua???" },
+                      { "artist_alias": "\u30a2\u30af\u30a2" },
+                      { "artist_alias": "(Aqua)" }
+                    ],
+                    "artist_rating": 61,
+                    "artist_twitter_url": "",
+                    "artist_credits": { "artist_list": [] },
+                    "restricted": 0,
+                    "updated_time": "2016-12-16T20:08:05Z",
+                    "begin_date_year": "1994",
+                    "begin_date": "1994-00-00",
+                    "end_date_year": "",
+                    "end_date": "0000-00-00"
+                  }
+                }
+              ]
+            },
+            "restricted": 0,
+            "updated_time": "2023-06-23T04:00:18Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        },
+        {
+          "artist": {
+            "artist_id": 34041208,
+            "artist_name": "The Rose",
+            "artist_name_translation_list": [
+              {
+                "artist_name_translation": {
+                  "language": "KO",
+                  "translation": "\ub354 \ub85c\uc988"
+                }
+              }
+            ],
+            "artist_comment": "",
+            "artist_country": "",
+            "artist_alias_list": [{ "artist_alias": "\ub354 \ub85c\uc988" }],
+            "artist_rating": 62,
+            "artist_twitter_url": "",
+            "artist_credits": { "artist_list": [] },
+            "restricted": 0,
+            "updated_time": "2017-08-04T10:28:13Z",
+            "begin_date_year": "",
+            "begin_date": "0000-00-00",
+            "end_date_year": "",
+            "end_date": "0000-00-00"
+          }
+        }
+      ]
+    }
+  }
+}

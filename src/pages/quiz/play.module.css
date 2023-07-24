@@ -1,0 +1,34 @@
+.page {
+  position: relative;
+}
+
+.actions button {
+  position: absolute;
+  top: 12px;
+  right: left;
+  width: 6rem;
+  height: 3rem;
+}
+
+.main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizEmptyResponse {
+  margin-top: 5rem;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.quizEmptyResponse p {
+  margin-bottom: 20px;
+}
+
+.quizEmptyResponse button {
+  margin: 20px auto;
+}

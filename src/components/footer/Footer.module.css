@@ -10,6 +10,7 @@
 .footerRow {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .poweredBy {
@@ -18,4 +19,11 @@
 
 .logo {
   width: 6rem;
+  height: auto;
+}
+
+@media screen and (min-width: 1024) {
+  .logo {
+    width: 5rem;
+  }
 }

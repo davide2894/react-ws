@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice, current } from "@reduxjs/toolkit";
 import { QuizType } from "@types";
 import log from "@utils/log";
 import { WritableDraft } from "immer/dist/internal";
+import { prepareQuizQuestions } from "src/api/tracksApi";
 import { addLastPlayedQuizToLocalDb } from "src/data/localDatabase";
 
 export const updateQuizWithAnsweredQuestionThunk = createAsyncThunk(
@@ -16,6 +17,15 @@ export const updateQuizWithAnsweredQuestionThunk = createAsyncThunk(
       quizState,
       userState: thunkAPI.getState().userReducer,
     };
+  }
+);
+
+export const startQuizThunk = createAsyncThunk(
+  "quizSlice/startQuizThunk",
+  async (_: any, thunkAPI: any) => {
+    prepareQuizQuestions().then((fetchedQuestions) => {
+      thunkAPI.dispatch(startQuiz({ questions: fetchedQuestions }));
+    });
   }
 );
 
@@ -83,6 +93,9 @@ export const quizSlice = createSlice({
         }
       }
     );
+    builder.addCase(startQuizThunk.fulfilled, (state, action) => {
+      log({ extraQuizStartState: state, extraQuizAction: action });
+    });
   },
 });
 

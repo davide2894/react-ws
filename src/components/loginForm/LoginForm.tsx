@@ -18,8 +18,9 @@ function LoginForm(props: { onLoginFormSubmit: () => void }) {
     dispatch(login(userName));
 
     if (props.onLoginFormSubmit) {
+      // router.push("/");
+      router.push("/quiz/lobby");
       props.onLoginFormSubmit();
-      router.push("/");
     }
   }
 
