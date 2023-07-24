@@ -6,21 +6,24 @@ export const userSlice = createSlice({
   initialState: {
     name: "",
     isLogged: false,
-    personalGames: [],
+    personalScores: [],
   } as User,
   reducers: {
     login: (state, action) => {
       state.name = action.payload.name;
       state.isLogged = true;
-      state.personalGames = action.payload.personalGames;
+      state.personalScores = action.payload.personalScores;
     },
     logout: (state) => {
       state.name = "";
       state.isLogged = false;
-      state.personalGames = [];
+      state.personalScores = [];
+    },
+    updateUser: (state, action) => {
+      state.personalScores = action.payload.personalScores;
     },
   },
 });
 
-export const { login, logout } = userSlice.actions;
+export const { login, logout, updateUser } = userSlice.actions;
 export default userSlice.reducer;
