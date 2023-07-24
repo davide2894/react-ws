@@ -1,0 +1,6 @@
+.submitButton {
+  background-color: var(--color-white);
+  color: var(--color-cod-gray);
+  width: 6rem;
+  height: 45px;
+}
