@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Who sings?
 
-## Getting Started
+This is a music-based quiz game I built as per requirements provided by [Musixmatch](https://www.musixmatch.com/)
 
-First, run the development server:
+## User journey
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The user has to log his name to register an account and start the game.
+His/Her account is stored in the browser `localStorage`, which is a convenient compromise to persist without a DB, since `localStorage` expires only when the user deletes it manually. It survives tab change an browser close and opening.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The can play as many games as he/she wants, and everytime a game finishes, the scores is saved inside the user's account. It is then used to update the user's personal scores table and the global high scores table.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Technologies used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+While building this project I facedd many issues that led to learning experiences.
+I am quite grateful for them to be honest, because this time around I wanted to learn by doing and not just following what someone else is doing in a tutorial video.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Here are the technologies being used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Redux Tooklit](https://redux-toolkit.js.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Css modules](https://github.com/css-modules/css-modules)
 
-## Learn More
+### Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+- `NodeJS` >= 10
+- Chrome (or any Chromium based browser, like the new Edge)/Firefox/Safari
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run `npm i`
 
-## Deploy on Vercel
+### Executing program
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Run in dev mode (with file watch): `npm run dev`
+- Run in production mode - it generates a single build: `npm run build`
+- Launch tests: `npm run test`
