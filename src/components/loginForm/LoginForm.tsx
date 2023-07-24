@@ -1,9 +1,10 @@
 import { SyntheticEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@store";
-import { login } from "@userSlice";
 import SubmitButton from "@components/submitButton/SubmitButton";
 import { useRouter } from "next/router";
+import { login } from "src/features/user/userSlice";
+import styles from "./LoginForm.module.css";
 
 function LoginForm(props: { onLoginFormSubmit: () => void }) {
   const [userName, setUserName] = useState("");
@@ -22,18 +23,13 @@ function LoginForm(props: { onLoginFormSubmit: () => void }) {
     }
   }
 
-  const inputCssClasses =
-    "shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-black";
-
   return (
-    <form
-      className="shadow-md rounded pt-6 pb-8 mb-4"
-      onSubmit={(evt) => onFormSubmit(evt)}>
+    <form className={styles.loginForm} onSubmit={(evt) => onFormSubmit(evt)}>
       <div className="mb-4">
         <label htmlFor="nameInput" className="block mb-2">
-          Name:
+          Login:
           <input
-            className={inputCssClasses}
+            className={styles.nameInput}
             type="text"
             name="name"
             required
