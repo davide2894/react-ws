@@ -1,11 +1,11 @@
-import { User, UserTypeInLocalDb } from "@types";
+import { Score, HighScore, QuizType, User, UserTypeInLocalDb } from "@types";
 
 const usersKeyInLocalDb = "musixmatch/who-sings/localDb/users";
 
 export function insertNewUserInLocalDb(user: UserTypeInLocalDb) {
-  if (!userExistsInLocalDb(user.name)) {
-    updateUserInLocalDb(user);
-  }
+  const users = getUsersInLocalDb();
+  users.push(user);
+  localStorage.setItem(usersKeyInLocalDb, JSON.stringify(users));
 }
 
 export function userExistsInLocalDb(userName: string) {
@@ -16,14 +16,25 @@ export function userExistsInLocalDb(userName: string) {
   return getUserInLocalDbByName(userName);
 }
 
-export function getUsersInLocalDb(): Array<UserTypeInLocalDb> {
+export function getUsersInLocalDb(): Array<UserTypeInLocalDb | any> {
   const usersInLocalDb = localStorage.getItem(usersKeyInLocalDb);
   return usersInLocalDb ? JSON.parse(usersInLocalDb) : [];
 }
 
 export function updateUserInLocalDb(updatedUser: UserTypeInLocalDb) {
-  const users = getUsersInLocalDb();
-  users.push(updatedUser);
+  let users = getUsersInLocalDb();
+  if (!users.length) {
+    users.push(updatedUser);
+  } else {
+    users = users.map((user) => {
+      if (user.name === updatedUser.name) {
+        user = updatedUser;
+        return user;
+      } else {
+        return user;
+      }
+    });
+  }
   localStorage.setItem(usersKeyInLocalDb, JSON.stringify(users));
 }
 
@@ -36,31 +47,46 @@ function localDbExists() {
   return localStorage.getItem("musixmatch/who-sings/localDb/users");
 }
 
-function removeUserFromLocalDb(userName: string) {
-  // code here
+export function addLastPlayedQuizToLocalDb(quiz: QuizType, userName: string) {
+  let userInLocalDb = getUserInLocalDbByName(userName);
+  if (userInLocalDb) {
+    userInLocalDb.personalScores.push({
+      dateString: quiz.dateString,
+      time: quiz.totalTime,
+      points: quiz.totalPoints,
+    } as Score);
+    updateUserInLocalDb(userInLocalDb);
+  }
 }
 
-function deleteUserInLocalDb(user: any) {
-  // code
+export function getUserGameScores(userName: string) {
+  let userInLocalDb = getUserInLocalDbByName(userName);
+  return userInLocalDb?.personalScores || [];
 }
 
-const DB = {
-  users: [
-    {
-      name: "Davide",
-      isLogged: "false",
-      personalGames: [
-        {
-          score: 100,
-          date: "3 nov 2022",
-          time: "1m 30s",
-        },
-        {
-          score: 200,
-          date: "19 july 20223",
-          time: "1m 2s",
-        },
-      ],
-    },
-  ],
-};
+function getUserHighScore(user: User): HighScore {
+  const highScore = {
+    name: user.name,
+    runs: 0,
+    time: 0,
+    points: 0,
+    dateString: "",
+  };
+  if (user && user.personalScores && user.personalScores.length) {
+    user.personalScores.forEach((game) => {
+      highScore.runs++;
+      highScore.time += 1;
+      highScore.points += game.points;
+    });
+  }
+  return highScore;
+}
+
+export function getAllHighScores() {
+  const users = getUsersInLocalDb();
+  const allHighScores: Array<HighScore> = [];
+  users.forEach((user) => {
+    allHighScores.push(getUserHighScore(user));
+  });
+  return allHighScores;
+}
