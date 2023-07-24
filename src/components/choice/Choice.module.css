@@ -1,0 +1,17 @@
+.choice {
+  padding: 1rem;
+  border: 1px solid var(--color-cod-gray);
+}
+
+.choice:active {
+  background: var(--color-sunset-orange);
+}
+
+.correctChoiceSelected {
+  background-color: lightgreen;
+}
+
+.wrongChoiceSelected {
+  background-color: red;
+  color: white;
+}
