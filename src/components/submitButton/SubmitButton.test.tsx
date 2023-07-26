@@ -6,7 +6,7 @@ afterEach(() => {
   cleanup();
 });
 
-test("Login component renders correctly", () => {
+test("Submit component renders correctly", () => {
   const btnTextString = "Submit button test";
   renderWithProviders(<SubmitButton text={btnTextString} />);
   const submitButtonComponent = screen.getByTestId("submitButtonTestAttribute");
