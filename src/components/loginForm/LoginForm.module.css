@@ -1,7 +1,13 @@
 .loginForm {
+  display: flex;
+  flex-direction: column;
   padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   margin-bottom: 1rem;
+}
+
+.loginLabel {
+  display: block;
 }
 
 .nameInput {
@@ -9,5 +15,9 @@
   width: 100%;
   padding: 0.25rem;
   color: var(--color-cod-gray);
+}
+
+.loginLabel,
+.nameInput {
   margin-bottom: 10px;
 }

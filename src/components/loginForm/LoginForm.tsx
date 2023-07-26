@@ -13,33 +13,27 @@ function LoginForm(props: { onLoginFormSubmit: () => void }) {
 
   function onFormSubmit(evt: SyntheticEvent) {
     evt.preventDefault();
-
     dispatch(login(userName));
-
-    if (props.onLoginFormSubmit) {
-      // router.push("/");
-      router.push("/quiz/lobby");
-      props.onLoginFormSubmit();
-    }
+    router.push("/quiz/lobby");
   }
 
   return (
     <form className={styles.loginForm} onSubmit={(evt) => onFormSubmit(evt)}>
       <div className="mb-4">
-        <label htmlFor="nameInput" className="block mb-2">
+        <label htmlFor="nameInput" className={styles.loginLabel}>
           Login:
-          <input
-            className={styles.nameInput}
-            type="text"
-            name="name"
-            required
-            id="nameInput"
-            value={userName}
-            onChange={(evt) => {
-              setUserName(evt.target.value);
-            }}
-          />
         </label>
+        <input
+          className={styles.nameInput}
+          type="text"
+          name="name"
+          required
+          id="nameInput"
+          value={userName}
+          onChange={(evt) => {
+            setUserName(evt.target.value);
+          }}
+        />
       </div>
       <SubmitButton text="Login" />
     </form>
