@@ -20,7 +20,7 @@ function Countdown(props: {
     } else {
       props.onExpire();
     }
-  }, [seconds, setSeconds, props.isOn]);
+  }, [seconds, setSeconds, props.isOn, props.onExpire, props]);
 
   return <div className={styles.countDown}>{seconds}</div>;
 }
