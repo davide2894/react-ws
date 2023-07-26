@@ -120,13 +120,7 @@ function isValidQuestion(question: {
 }
 
 async function getTopTracksInCountry() {
-  const url = `${protocol}://${domain}/${path}/${version}/chart.tracks.get?chart_name=${
-    queryParameters.chartName
-  }&page=${queryParameters.page}&page_size=${
-    queryParameters.pageSize
-  }&country=${"it"}&f_has_lyrics=${queryParameters.filterHasLyrics}&apikey=${
-    queryParameters.apiKey
-  }`;
+  const url = `${protocol}://${domain}/${path}/${version}/chart.tracks.get?chart_name=${queryParameters.chartName}&page=${queryParameters.page}&page_size=${queryParameters.pageSize}&country=${queryParameters.country}&f_has_lyrics=${queryParameters.filterHasLyrics}&apikey=${queryParameters.apiKey}`;
   const apiResponse = await fetch(url, options);
   if (!apiResponse.ok) {
     log({ apiResponse });
@@ -138,11 +132,7 @@ async function getTopTracksInCountry() {
 }
 
 async function getTopArtistInCountry() {
-  const url = `${protocol}://${domain}/${path}/${version}/chart.artists.get?page=${
-    queryParameters.page
-  }&page_size=${queryParameters.pageSize}&country=${"it"}&apikey=${
-    queryParameters.apiKey
-  }`;
+  const url = `${protocol}://${domain}/${path}/${version}/chart.artists.get?page=${queryParameters.page}&page_size=${queryParameters.pageSize}&country=${queryParameters.country}&apikey=${queryParameters.apiKey}`;
   const apiResponse = await fetch(url, options);
   if (!apiResponse.ok) {
     log({ apiResponse });
