@@ -13,7 +13,7 @@ function QuizEnd() {
 
   function handleQuizEnd() {
     dispatch(resetQuiz());
-    router.push("quiz/play");
+    router.reload();
   }
 
   return (
