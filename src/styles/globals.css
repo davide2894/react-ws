@@ -43,13 +43,12 @@ a {
   padding-bottom: 0.5rem;
   border-radius: 12px;
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 button:hover,
 a:hover {
   outline: 2px solid var(--color-cod-gray);
+  cursor: pointer;
 }
 
 a {
@@ -74,6 +73,16 @@ h2 {
 .scoresTable {
   margin-top: 2rem;
   max-width: 960px;
+  overflow-x: auto;
+}
+
+.scoresTable td {
+  position: sticky;
+  left: 0;
+}
+
+.scoresTable table {
+  word-break: break-all;
 }
 
 .scoresTable table {
@@ -87,7 +96,8 @@ h2 {
 }
 .scoresTable th,
 .scoresTable table td {
-  padding: 10px 20px;
+  padding: 7px 10px;
+  text-align: center;
 }
 
 .personalScoresPage .scoresTable td {
