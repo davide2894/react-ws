@@ -1,5 +1,5 @@
 import Modal from "@components/modal/Modal";
-import { logout } from "src/features/user/userSlice";
+import { logout } from "src/store/features/user/userSlice";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";

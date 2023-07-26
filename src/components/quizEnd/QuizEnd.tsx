@@ -1,9 +1,8 @@
-import Progress from "@components/progress/Progress";
 import Score from "@components/points/Points";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
-import { resetQuiz } from "src/features/quiz/quizSlice";
-import { useAppSelector } from "@store";
+import { resetQuiz } from "src/store/features/quiz/quizSlice";
+import { useAppSelector } from "src/store/store";
 import { useRouter } from "next/router";
 import styles from "./QuizEnd.module.css";
 

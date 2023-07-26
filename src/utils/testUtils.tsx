@@ -2,11 +2,11 @@ import React, { PropsWithChildren } from "react";
 import { render } from "@testing-library/react";
 import type { RenderOptions } from "@testing-library/react";
 import { Store, configureStore } from "@reduxjs/toolkit";
-import userReducer from "../features/user/userSlice";
-import quizReducer from "../features/quiz/quizSlice";
-import type { PreloadedState } from "@reduxjs/toolkit";
+import type { AnyAction, PreloadedState } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import { RootState } from "@store";
+import userReducer from "../store/features/user/userSlice";
+import quizReducer from "../store/features/quiz/quizSlice";
+import { RootState } from "src/store/store";
 import { QuizType, User } from "@types";
 
 // This type interface extends the default options for render from RTL, as well
@@ -42,8 +42,8 @@ export function renderWithProviders(
     // Automatically create a store instance if no store was passed in
     store = configureStore({
       reducer: {
-        userReducer,
-        quizReducer,
+        userReducer: userReducer,
+        quizReducer: quizReducer,
       },
       preloadedState,
     }),

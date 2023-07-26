@@ -1,13 +1,12 @@
 import Choice from "@components/choice/Choice";
 import Countdown from "@components/countdown/Countdown";
-import { AppDispatch, useAppSelector } from "@store";
+import { AppDispatch, useAppSelector } from "src/store/store";
 import { QuizType } from "@types";
 import log from "@utils/log";
-import { shuffleArray } from "@utils/shuffleArray";
 import { useDispatch } from "react-redux";
 import { getUserGameScores } from "src/data/localDatabase";
-import { updateQuizWithAnsweredQuestionThunk } from "src/features/quiz/quizSlice";
-import { updateUser } from "src/features/user/userSlice";
+import { updateQuizWithAnsweredQuestionThunk } from "src/store/features/quiz/quizSlice";
+import { updateUser } from "src/store/features/user/userSlice";
 import styles from "./Question.module.css";
 import { useEffect, useState } from "react";
 

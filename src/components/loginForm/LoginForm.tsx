@@ -1,9 +1,8 @@
 import { SyntheticEvent, useState } from "react";
 import { useDispatch } from "react-redux";
-import { useAppSelector } from "@store";
 import SubmitButton from "@components/submitButton/SubmitButton";
 import { useRouter } from "next/router";
-import { login } from "src/features/user/userSlice";
+import { login } from "src/store/features/user/userSlice";
 import styles from "./LoginForm.module.css";
 
 function LoginForm(props: { onLoginFormSubmit: () => void }) {
