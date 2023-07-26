@@ -1,11 +1,4 @@
-import {
-  JSXElementConstructor,
-  PromiseLikeOfReactNode,
-  ReactElement,
-  ReactNode,
-  ReactPortal,
-  useState,
-} from "react";
+import { useState } from "react";
 import styles from "./Choice.module.css";
 
 function Choice(props: {

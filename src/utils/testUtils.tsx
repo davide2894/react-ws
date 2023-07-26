@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 import { render } from "@testing-library/react";
 import type { RenderOptions } from "@testing-library/react";
 import { Store, configureStore } from "@reduxjs/toolkit";
-import type { AnyAction, PreloadedState } from "@reduxjs/toolkit";
+import type { PreloadedState } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReducer from "../store/features/user/userSlice";
 import quizReducer from "../store/features/quiz/quizSlice";

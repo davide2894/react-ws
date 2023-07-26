@@ -1,5 +1,5 @@
 import GameScoreTableRow from "@components/gameScoreTableRow/GameScoreTableRow";
-import { Score } from "@types";
+import { HighScore, Score } from "@types";
 import React, { useEffect, useState } from "react";
 import { getAllHighScores } from "src/data/localDatabase";
 

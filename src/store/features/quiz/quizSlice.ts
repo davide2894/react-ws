@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice, current } from "@reduxjs/toolkit";
 import { QuizType } from "@types";
 import log from "@utils/log";
 import { WritableDraft } from "immer/dist/internal";
-import { prepareQuizQuestions } from "src/api/tracksApi";
 import { addLastPlayedQuizToLocalDb } from "src/data/localDatabase";
 
 export const updateQuizWithAnsweredQuestionThunk = createAsyncThunk(

@@ -1,5 +1,3 @@
-import { type } from "os";
-
 export interface UserTypeInLocalDb {
   name: string;
   personalScores: Array<Score>;

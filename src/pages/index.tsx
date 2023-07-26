@@ -1,4 +1,3 @@
-import Countdown from "@components/countdown/Countdown";
 import LoggedOutHome from "@components/loggedOutHome/LoggedOutHome";
 import { useAppSelector } from "src/store/store";
 import { useRouter } from "next/router";

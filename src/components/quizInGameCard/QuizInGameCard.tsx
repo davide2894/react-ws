@@ -11,7 +11,7 @@ function QuizInGameCard(props: { quiz: QuizType; question: QuestionType }) {
         <Points />
         <Progress />
       </div>
-      <Question quiz={props.quiz} question={props.question}></Question>
+      <Question question={props.question}></Question>
     </div>
   );
 }

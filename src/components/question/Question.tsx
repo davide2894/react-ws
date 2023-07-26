@@ -1,7 +1,7 @@
 import Choice from "@components/choice/Choice";
 import Countdown from "@components/countdown/Countdown";
 import { AppDispatch, useAppSelector } from "src/store/store";
-import { QuizType } from "@types";
+import { QuestionType } from "@types";
 import log from "@utils/log";
 import { useDispatch } from "react-redux";
 import { getUserGameScores } from "src/data/localDatabase";
@@ -10,7 +10,7 @@ import { updateUser } from "src/store/features/user/userSlice";
 import styles from "./Question.module.css";
 import { useEffect, useState } from "react";
 
-function Question(props: { quiz: QuizType; question: any }) {
+function Question(props: { question: QuestionType }) {
   const [countDownIsOn, setCountDownIsOn] = useState(true);
   const [isChoiceDisabled, setIsChoiceDisabled] = useState(false);
   const userState = useAppSelector((state) => state.userReducer);
