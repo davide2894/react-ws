@@ -17,17 +17,21 @@ function LogoutButton(props: { shouldDisplayGameLossWarning: boolean }) {
   }
 
   return (
-    <div>
-      <button onClick={() => setShowLogoutModal(true)}>Logout</button>
+    <>
+      <button
+        className={logoutStyles.logoutButton}
+        onClick={() => setShowLogoutModal(true)}>
+        Logout
+      </button>
       {showLogoutModal && (
         <Modal text="Logout" onClose={() => setShowLogoutModal(false)}>
           <div className={logoutStyles.promptContainer}>
             <p className={logoutStyles.confirmationPrompt}>
               Are you sure you want to logout?
             </p>
-            {props.shouldDisplayGameLossWarning ?? (
+            {props.shouldDisplayGameLossWarning && (
               <p className={logoutStyles.warning}>
-                "All of your game progress will be lost"
+                All of your game progress will be lost
               </p>
             )}
           </div>
@@ -45,7 +49,7 @@ function LogoutButton(props: { shouldDisplayGameLossWarning: boolean }) {
           </div>
         </Modal>
       )}
-    </div>
+    </>
   );
 }
 
