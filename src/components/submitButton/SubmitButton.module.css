@@ -3,4 +3,6 @@
   color: var(--color-cod-gray);
   width: 6rem;
   height: 45px;
+  margin-top: 10px;
+  align-self: center;
 }
