@@ -1,42 +1,62 @@
-import BackButton from "@components/backButton/BackButton";
-import { useAppSelector } from "@store";
+import { useAppSelector } from "src/store/store";
 import LogoutButton from "@components/logoutButton/LogoutButton";
-import QuizStart from "@components/quizStart/QuizStart";
-import QuizEnd from "@components/quizEnd/QuizEnd";
-import QuizInGameCard from "@components/quizInGameCard/QuizInGameCard";
-import styles from "./quiz.module.css";
-import log from "@utils/log";
-import { prepareQuizQuestions } from "src/api/tracksApi";
+import styles from "./lobby.module.css";
+import { useDispatch } from "react-redux";
+import { resetQuiz } from "src/store/features/quiz/quizSlice";
+import { useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-function Lobby(props: { questionsFetchedOnServerSide: any }) {
-  log({ propsQuestions: props.questionsFetchedOnServerSide });
+function Lobby() {
+  const user = useAppSelector((state) => state.userReducer);
+  const router = useRouter();
+  const dispatch = useDispatch();
   const quizState = useAppSelector((state) => state.quizReducer);
-  const isQuizEnd =
-    quizState.numberOfQuestionsAnswered === quizState.questions?.length;
-  const currentQuestion = getCurrentQuestion();
   let content;
 
-  if (!quizState.initialized) {
-    content = <QuizStart questions={props.questionsFetchedOnServerSide} />;
-  } else if (isQuizEnd) {
-    content = <QuizEnd />;
-  } else if (currentQuestion) {
-    content = <QuizInGameCard quiz={quizState} question={currentQuestion} />;
-  }
+  useEffect(() => {
+    dispatch(resetQuiz());
+  }, [dispatch]);
 
-  function getCurrentQuestion() {
-    return quizState.questions?.find((question: any) => !question.isAnswered);
-  }
+  useEffect(() => {
+    if (!user.isLogged) {
+      router.push("/");
+    }
+  }, [router, user.isLogged]);
 
-  return (
-    <div className={styles.page}>
-      <div className={styles.actions}>
-        <BackButton />
-        <LogoutButton shouldDisplayGameLossWarning={true} />
+  if (!user.isLogged) {
+  } else {
+    content = (
+      <div className={styles.page}>
+        <div className={styles.actions}>
+          <LogoutButton shouldDisplayGameLossWarning={false} />
+        </div>
+        {!quizState.initialized && (
+          <div className={styles.main}>
+            <div className={styles.welcome}>
+              <p></p>
+              Wecome
+              <span className={styles.userName}>{user.name}</span>!
+              <p>This is the game lobby.</p>
+              <p>Choose what to do :)</p>
+            </div>
+            <div className={styles.actions}>
+              <Link className={styles.link} href="/highscore">
+                Global high scores
+              </Link>
+              <Link className={styles.link} href="/user">
+                Personal scores
+              </Link>
+              <Link className={styles.link} href="/quiz/game">
+                Play a game
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
-      <div className={styles.main}>{content}</div>
-    </div>
-  );
+    );
+  }
+  return content;
 }
 
 export default Lobby;

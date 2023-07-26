@@ -1,17 +1,28 @@
 import QuizEnd from "@components/quizEnd/QuizEnd";
 import QuizInGameCard from "@components/quizInGameCard/QuizInGameCard";
-import { useAppSelector } from "@store";
+import { useAppSelector } from "src/store/store";
 import { prepareQuizQuestions } from "src/api/tracksApi";
-import styles from "./play.module.css";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import LogoutButton from "@components/logoutButton/LogoutButton";
+import styles from "./game.module.css";
+import { resetQuiz, startQuiz } from "src/store/features/quiz/quizSlice";
 
-function play(props: { questionsFetchedOnServerSide: any }) {
+function Game(props: { questionsFetchedOnServerSide: any }) {
+  const dispatch = useDispatch();
   const router = useRouter();
   const quizState = useAppSelector((state) => state.quizReducer);
   const isQuizEnd =
+    quizState.questions?.length &&
     quizState.numberOfQuestionsAnswered === quizState.questions?.length;
   const currentQuestion = getCurrentQuestion();
   let content;
+
+  useEffect(() => {
+    dispatch(resetQuiz());
+    dispatch(startQuiz({ questions: props.questionsFetchedOnServerSide }));
+  }, [dispatch, props.questionsFetchedOnServerSide]);
 
   if (!props.questionsFetchedOnServerSide) {
     content = (
@@ -33,10 +44,15 @@ function play(props: { questionsFetchedOnServerSide: any }) {
     return quizState.questions?.find((question: any) => !question.isAnswered);
   }
 
-  return <div>{content}</div>;
+  return (
+    <div className={styles.main}>
+      <LogoutButton shouldDisplayGameLossWarning={true} />
+      {content}
+    </div>
+  );
 }
 
-export default play;
+export default Game;
 
 export const getServerSideProps = async () => {
   const questionsFetchedOnServerSide = await prepareQuizQuestions();

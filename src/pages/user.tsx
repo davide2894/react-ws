@@ -1,14 +1,18 @@
 import BackButton from "@components/backButton/BackButton";
 import UserScoreTable from "@components/userScoreTable/UserScoreTable";
-import { useAppSelector } from "@store";
+import { useAppSelector } from "src/store/store";
 import log from "@utils/log";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import styles from "./user.module.css";
+import { useDispatch } from "react-redux";
+import { getUserGameScores } from "src/data/localDatabase";
+import { updateUser } from "src/store/features/user/userSlice";
 
-function user() {
+function User() {
   const user = useAppSelector((state) => state.userReducer);
+  const dispatch = useDispatch();
   const router = useRouter();
 
   useEffect(() => {
@@ -16,6 +20,12 @@ function user() {
       router.push("/");
     }
   }, [router, user.isLogged]);
+
+  useEffect(() => {
+    if (window.localStorage) {
+      dispatch(updateUser({ personalScores: getUserGameScores(user.name) }));
+    }
+  }, [dispatch, user.name]);
 
   let content;
 
@@ -30,9 +40,9 @@ function user() {
     content = (
       <div className={styles.personalScoresEmpty}>
         <p>
-          "You haven't played any game yet. Play one to see your scores here"
+          You have not played any game yet. Play one to see your scores here
         </p>
-        <Link href="quiz">Play a game!</Link>
+        <Link href="quiz/game">Play a game!</Link>
       </div>
     );
   }
@@ -46,4 +56,4 @@ function user() {
   );
 }
 
-export default user;
+export default User;

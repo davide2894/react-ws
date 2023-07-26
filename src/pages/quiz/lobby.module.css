@@ -1,0 +1,48 @@
+.page {
+  position: relative;
+}
+
+.main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizEmptyResponse {
+  margin-top: 10rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.loggedHomeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.welcome {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.userName {
+  display: inline-block;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.link {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
