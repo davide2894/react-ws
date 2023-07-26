@@ -1,25 +1,18 @@
 import BackButton from "@components/backButton/BackButton";
 import UserScoreTable from "@components/userScoreTable/UserScoreTable";
 import { useAppSelector } from "src/store/store";
-import log from "@utils/log";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import styles from "./user.module.css";
 import { useDispatch } from "react-redux";
 import { getUserGameScores } from "src/data/localDatabase";
 import { updateUser } from "src/store/features/user/userSlice";
+import useProtectRoute from "src/customHooks/useProtectRoute";
 
 function User() {
+  useProtectRoute();
   const user = useAppSelector((state) => state.userReducer);
   const dispatch = useDispatch();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!user.isLogged) {
-      router.push("/");
-    }
-  }, [router, user.isLogged]);
 
   useEffect(() => {
     if (window.localStorage) {

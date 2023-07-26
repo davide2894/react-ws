@@ -8,8 +8,12 @@ import { useDispatch } from "react-redux";
 import LogoutButton from "@components/logoutButton/LogoutButton";
 import styles from "./game.module.css";
 import { resetQuiz, startQuiz } from "src/store/features/quiz/quizSlice";
+import { QuestionType } from "@types";
+import useProtectRoute from "src/customHooks/useProtectRoute";
 
-function Game(props: { questionsFetchedOnServerSide: any }) {
+function Game(props: { questionsFetchedOnServerSide: QuestionType[] }) {
+  useProtectRoute();
+  const user = useAppSelector((state) => state.userReducer);
   const dispatch = useDispatch();
   const router = useRouter();
   const quizState = useAppSelector((state) => state.quizReducer);
@@ -24,7 +28,9 @@ function Game(props: { questionsFetchedOnServerSide: any }) {
     dispatch(startQuiz({ questions: props.questionsFetchedOnServerSide }));
   }, [dispatch, props.questionsFetchedOnServerSide]);
 
-  if (!props.questionsFetchedOnServerSide) {
+  if (!user.isLogged) {
+    content = "";
+  } else if (!props.questionsFetchedOnServerSide) {
     content = (
       <div className={styles.quizEmptyResponse}>
         <p>
@@ -41,7 +47,9 @@ function Game(props: { questionsFetchedOnServerSide: any }) {
   }
 
   function getCurrentQuestion() {
-    return quizState.questions?.find((question: any) => !question.isAnswered);
+    return quizState.questions?.find(
+      (question: QuestionType) => !question.isAnswered
+    );
   }
 
   return (

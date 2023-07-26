@@ -5,11 +5,11 @@ import { useDispatch } from "react-redux";
 import { resetQuiz } from "src/store/features/quiz/quizSlice";
 import { useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import useProtectRoute from "src/customHooks/useProtectRoute";
 
 function Lobby() {
+  useProtectRoute();
   const user = useAppSelector((state) => state.userReducer);
-  const router = useRouter();
   const dispatch = useDispatch();
   const quizState = useAppSelector((state) => state.quizReducer);
   let content;
@@ -18,13 +18,8 @@ function Lobby() {
     dispatch(resetQuiz());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (!user.isLogged) {
-      router.push("/");
-    }
-  }, [router, user.isLogged]);
-
   if (!user.isLogged) {
+    content = "";
   } else {
     content = (
       <div className={styles.page}>
