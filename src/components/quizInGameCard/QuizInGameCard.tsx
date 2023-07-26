@@ -7,7 +7,7 @@ import styles from "./QuizInGameCard.module.css";
 function QuizInGameCard(props: { quiz: QuizType; question: QuestionType }) {
   return (
     <div className={styles.quizInGameCard}>
-      <div className="quiz_tracking flex justify-around mt-4 mb-4">
+      <div className={styles.quizStats}>
         <Points />
         <Progress />
       </div>

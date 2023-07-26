@@ -1,6 +1,12 @@
 .choice {
   padding: 1rem;
   border: 1px solid var(--color-cod-gray);
+  pointer-events: all;
+}
+
+.choice:hover {
+  cursor: pointer;
+  outline: 1px solid var(--color-cod-gray);
 }
 
 .choice:active {
@@ -14,4 +20,8 @@
 .wrongChoiceSelected {
   background-color: red;
   color: white;
+}
+
+.choiceDisabled {
+  pointer-events: none;
 }

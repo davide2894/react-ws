@@ -5,19 +5,26 @@ function Choice(props: {
   choice: any;
   onChoiceSelected: (arg0: any) => void;
   freezeTimer: () => void;
+  disableChoices: () => void;
+  isChoiceDisabled: boolean;
 }) {
   const [isSelected, setIsSelected] = useState(false);
-  const choice = props.choice;
-  const isCorrectChoiceClass = choice.isCorrectChoice
+  const isCorrectChoiceClass = props.choice.isCorrectChoice
     ? styles.isCorrectChoice
     : "";
   let isCorrectChoiceSelectedClass;
+  let isChoiceDisabledClass;
+
   if (isSelected) {
-    isCorrectChoiceSelectedClass = choice.isCorrectChoice
+    isCorrectChoiceSelectedClass = props.choice.isCorrectChoice
       ? styles.correctChoiceSelected
       : styles.wrongChoiceSelected;
   } else {
     isCorrectChoiceSelectedClass = "";
+  }
+
+  if (props.isChoiceDisabled) {
+    isChoiceDisabledClass = styles.choiceDisabled;
   }
 
   function handleChoiceClick(evt: React.MouseEvent<HTMLLIElement, MouseEvent>) {
@@ -25,16 +32,17 @@ function Choice(props: {
     evt.stopPropagation();
     setIsSelected(true);
     props.freezeTimer();
+    props.disableChoices();
     setTimeout(() => {
-      props.onChoiceSelected(choice);
+      props.onChoiceSelected(props.choice);
     }, 2000);
   }
 
   return (
     <li
-      className={`${styles.choice} ${isCorrectChoiceClass} ${isCorrectChoiceSelectedClass}`}
+      className={`${styles.choice} ${isCorrectChoiceClass} ${isCorrectChoiceSelectedClass} ${isChoiceDisabledClass}`}
       onClick={(evt) => handleChoiceClick(evt)}>
-      {choice.name}
+      {props.choice.name}
     </li>
   );
 }
