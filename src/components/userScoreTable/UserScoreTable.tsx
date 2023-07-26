@@ -9,7 +9,7 @@ function UserScoreTable(props: { user: UserTypeInLocalDb }) {
           <tr>
             <th>Game Number</th>
             <th>When</th>
-            <th>Time</th>
+            <th>Time in seconds</th>
             <th>Points</th>
           </tr>
         </thead>
@@ -20,7 +20,8 @@ function UserScoreTable(props: { user: UserTypeInLocalDb }) {
               .reverse()
               .map((personalScore, idx) => {
                 return (
-                  //TODO: change key value from idx to unique value
+                  // develoepr note: idx is not the best unique id value to assign to a child's key
+                  // should improve this with a better one
                   <GameScoreTableRow
                     key={idx}
                     position={props.user.personalScores.length - idx}

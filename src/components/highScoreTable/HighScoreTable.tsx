@@ -28,14 +28,15 @@ function HighScoreTable() {
             <th>Position</th>
             <th>Name</th>
             <th>Runs</th>
-            <th>Total Time</th>
+            <th>Total Time (seconds) spent playing</th>
             <th>Total Points</th>
           </tr>
         </thead>
         <tbody>
           {highScores.sort(compareFn).map((highScore: any, idx: number) => {
             return (
-              //TODO: change key value from idx to unique value
+              // develoepr note: idx is not the best unique id value to assign to a child's key
+              // should improve this with a better one
               <GameScoreTableRow
                 key={idx}
                 position={idx + 1}
