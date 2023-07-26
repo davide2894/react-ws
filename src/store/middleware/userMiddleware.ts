@@ -5,10 +5,10 @@ import {
 } from "src/data/localDatabase";
 
 const userMiddleWare = (store: any) => (next: any) => (action: any) => {
-  log("middleware --> dispatching", action);
-  log("middleware --> store", store);
-  log("middleware --> next", next);
-  log("middleware --> action", action);
+  log("userMiddleware --> dispatching", action);
+  log("userMiddleware --> store", store);
+  log("userMiddleware --> next", next);
+  log("userMiddleware --> action", action);
 
   if (action.type === "userSlice/login") {
     log(action.payload);
@@ -28,8 +28,8 @@ const userMiddleWare = (store: any) => (next: any) => (action: any) => {
       action.payload.personalScores = [];
     }
 
-    log("middleware --> next", next);
-    log("middleware --> action", action);
+    log("userMiddleware --> next", next);
+    log("userMiddleware --> action", action);
   }
   return next(action);
 };
