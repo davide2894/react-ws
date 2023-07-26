@@ -4,7 +4,7 @@ import styles from "./Modal.module.css";
 
 function Modal(props: {
   text: string;
-  onClose: any;
+  onClose: () => void;
   children?: ReactNode;
   mode?: string;
 }) {

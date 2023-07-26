@@ -29,30 +29,22 @@ export interface QuizType {
   totalTime: number | string;
 }
 
-export interface QuestionType {
+export declare type QuestionType = {
   trackId: number;
   trackName: string;
-  trackSnippet: {
-    id: number;
-    body: string;
-  };
-  choices: [
-    {
-      id: number;
-      name: string;
-      isCorrectChoice: boolean;
-    },
-    {
-      id: number;
-      name: string;
-      isCorrectChoice: boolean;
-    },
-    {
-      id: number;
-      name: string;
-      isCorrectChoice: boolean;
-    }
-  ];
+  trackSnippet: Snippet;
+  choices: Choice[];
   isAnswered: boolean;
   isAnsweredCorrectly: boolean;
-}
+};
+
+export declare type Snippet = {
+  id: number;
+  body: string;
+};
+
+export declare type Choice = {
+  id: number;
+  name: string;
+  isCorrectChoice: boolean;
+};

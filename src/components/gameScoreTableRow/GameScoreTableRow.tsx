@@ -3,7 +3,7 @@ function GameScoreTableRow(props: { score: any; position: number }) {
   return (
     <tr>
       <td>{position}</td>
-      {Object.keys(score).map((objKey, idx) => {
+      {Object.keys(score).map((objKey, idx: number) => {
         return <td key={`${idx}-${score[objKey]}`}>{score[objKey]}</td>;
       })}
     </tr>

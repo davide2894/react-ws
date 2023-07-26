@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { getAllHighScores } from "src/data/localDatabase";
 
 function HighScoreTable() {
-  const [highScores, setHighScores] = useState<any>([]);
+  const [highScores, setHighScores] = useState<HighScore[]>([]);
 
   useEffect(() => {
     setHighScores(getAllHighScores());

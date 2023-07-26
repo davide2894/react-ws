@@ -78,7 +78,7 @@ export const quizSlice = createSlice({
 
 function getQuestionToUpdate(
   state: WritableDraft<QuizType>,
-  payloadQuestion: { trackId: any }
+  payloadQuestion: { trackId: number }
 ) {
   return state.questions.find(
     (question) => question.trackId === payloadQuestion.trackId
