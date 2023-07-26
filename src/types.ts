@@ -55,6 +55,5 @@ export interface QuestionType {
       isCorrectChoice: boolean;
     }
   ];
-  isAnswered: boolean;
   isAnsweredCorrectly: boolean;
 }
