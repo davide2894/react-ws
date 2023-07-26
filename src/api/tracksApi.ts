@@ -1,3 +1,4 @@
+import { QuestionType } from "@types";
 import getRandomNumber from "@utils/getRandomNumber";
 import log from "@utils/log";
 import { shuffleArray } from "@utils/shuffleArray";
@@ -41,60 +42,55 @@ export async function prepareQuizQuestions() {
     artistList,
   });
 
-  let questions: Array<any> = [];
-
   if (!trackList || !artistList) {
     return null;
   }
 
-  for (let i = 0; i < numberOfQuestionsInQuiz; i++) {
-    log(`preparing question number ${i + 1}`);
+  let promisedQuestions: Promise<any>[] = [];
+  let questions = [];
 
-    prepareQuestion(trackList, artistList)
-      .then((question) => {
-        log({ fetchedSingleQuestion: question });
-        shuffleArray(question.choices);
-        questions.push(question);
-      })
-      .catch((err) => {
-        throw new Error(err).stack;
-      });
+  while (true) {
+    const question = await tryGetQuestion(trackList, artistList);
+    if (isValidQuestion(question)) {
+      shuffleArray(question.choices);
+      questions.push(question);
+      if (questions.length == numberOfQuestionsInQuiz) {
+        break;
+      } else {
+        continue;
+      }
+    } else {
+      continue;
+    }
   }
 
-  log("finished to prepare questions");
-  return questions ?? null;
+  return questions;
+  // for (let i = 0; i < numberOfQuestionsInQuiz; i++) {
+  //   promisedQuestions.push(
+  //     new Promise((resolve) => {
+  //       log(`preparing question number ${i + 1}`);
+
+  //       prepareQuestion(trackList, artistList).then((question: any) => {
+  //         log({ question });
+  //         log({ questionChoices: question.choices });
+  //         shuffleArray(question.choices);
+  //         log({ questionChoicesAfterBeingShuffled: question.choices });
+  //         resolve(question);
+  //       });
+  //     })
+  //   );
+  // }
+
+  // return Promise.all(promisedQuestions).then((questions) => {
+  //   log("finished to prepare questions");
+  //   log({ questionsToServe: questions });
+  //   return questions;
+  // });
 }
 
-async function getMockTopTracksInCountry() {
-  const apiResponse = await fetch("/api/mockTopTracks.json");
-  if (!apiResponse.ok) {
-    log({ apiResponse });
-    throw new Error(genericServerErrorMessage).stack;
-  }
-
-  const parsedResponse = await apiResponse.json();
-  return parsedResponse?.message?.body?.track_list ?? null;
-}
-
-async function getMockTopArtistInCountry() {
-  const apiResponse = await fetch("./api/mockTopArtists.json");
-  if (!apiResponse.ok) {
-    log({ apiResponse });
-    throw new Error(genericServerErrorMessage).stack;
-  }
-
-  const parsedResponse = await apiResponse.json();
-  return parsedResponse?.message?.body?.track_list ?? null;
-}
-
-export async function prepareQuestion(trackList: any, artistList: any) {
-  // const track = await recursiveGetRandomTrack(trackList);
+async function tryGetQuestion(trackList: any, artistList: any) {
   const track = await getRandomTrackPromise(trackList);
-  log({ promisedTrack: track });
   const snippet = await getTrackSnippet(track.track_id);
-  // const artistFirstAlternativeChoice = await getRandomArtist(artistList);
-  // const artistSecondAlternativeChoice = await getRandomArtist(artistList);
-
   const artistFirstAlternativeChoice = await getRandomArtistPromise(
     artistList,
     1
@@ -103,7 +99,138 @@ export async function prepareQuestion(trackList: any, artistList: any) {
     artistList,
     2
   );
+  if (
+    isValidTrack(track) &&
+    isValidSnippet(snippet) &&
+    isValidArtistAlternativeChoice(artistFirstAlternativeChoice) &&
+    isValidArtistAlternativeChoice(artistSecondAlternativeChoice)
+  ) {
+    return createQuestionObject(
+      track,
+      snippet,
+      artistFirstAlternativeChoice,
+      artistSecondAlternativeChoice
+    );
+  } else {
+    return createEmpyQuestionObject();
+  }
+}
 
+function isValidQuestion(question: {
+  trackId?: any;
+  trackName?: any;
+  trackSnippet?: any;
+  choices?: any;
+}) {
+  return (
+    question &&
+    Object.keys(question).length &&
+    question.trackId &&
+    question.trackName &&
+    question.trackSnippet &&
+    question.trackSnippet.id &&
+    question.trackSnippet.body &&
+    question.choices &&
+    question.choices.length == 3 &&
+    question.choices[0].id &&
+    question.choices[0].name &&
+    question.choices[1].id &&
+    question.choices[1].name &&
+    question.choices[2].id &&
+    question.choices[2].name
+  );
+}
+
+async function getTopTracksInCountry() {
+  const url = `${protocol}://${domain}/${path}/${version}/chart.tracks.get?chart_name=${queryParameters.chartName}&page=${queryParameters.page}&page_size=${queryParameters.pageSize}&country=${queryParameters.country}&f_has_lyrics=${queryParameters.filterHasLyrics}&apikey=${queryParameters.apiKey}`;
+  const apiResponse = await fetch(url, options);
+  if (!apiResponse.ok) {
+    log({ apiResponse });
+    throw new Error(genericServerErrorMessage).stack;
+  }
+
+  const parsedResponse = await apiResponse.json();
+  return parsedResponse?.message?.body?.track_list ?? null;
+}
+
+async function getTopArtistInCountry() {
+  const url = `${protocol}://${domain}/${path}/${version}/chart.artists.get?page=${queryParameters.page}&page_size=${queryParameters.pageSize}&country=${queryParameters.country}&apikey=${queryParameters.apiKey}`;
+  const apiResponse = await fetch(url, options);
+  if (!apiResponse.ok) {
+    log({ apiResponse });
+    throw new Error(genericServerErrorMessage).stack;
+  }
+
+  const parsedResponse = await apiResponse.json();
+  return parsedResponse?.message?.body?.artist_list ?? null;
+}
+
+function prepareQuestionPromise(trackList: any, artistList: any) {
+  return new Promise((resolve) => {
+    async function tryPrepareQuestion() {
+      const track = await getRandomTrackPromise(trackList);
+      log({ promisedTrack: track });
+      const snippet = await getTrackSnippet(track.track_id);
+      const artistFirstAlternativeChoice = await getRandomArtistPromise(
+        artistList,
+        1
+      );
+      const artistSecondAlternativeChoice = await getRandomArtistPromise(
+        artistList,
+        2
+      );
+
+      if (
+        isValidTrack(track) &&
+        isValidSnippet(snippet) &&
+        isValidArtistAlternativeChoice(artistFirstAlternativeChoice) &&
+        isValidArtistAlternativeChoice(artistSecondAlternativeChoice)
+      ) {
+        resolve(
+          createQuestionObject(
+            track,
+            snippet,
+            artistFirstAlternativeChoice,
+            artistSecondAlternativeChoice
+          )
+        );
+      } else {
+        tryPrepareQuestion();
+      }
+    }
+
+    tryPrepareQuestion();
+  });
+}
+
+function isValidTrack(track: { track_id: number; track_name: string }) {
+  return track && track.track_id && track.track_name;
+}
+
+function isValidSnippet(snippet: {
+  snippet_id: any;
+  snippet_body: any;
+}): boolean {
+  return snippet && snippet.snippet_id && snippet.snippet_body;
+}
+
+function isValidArtistAlternativeChoice(artistAlternativeChoice: {
+  artist_id: any;
+  artist_name: any;
+}): boolean {
+  return (
+    artistAlternativeChoice &&
+    artistAlternativeChoice.artist_id &&
+    artistAlternativeChoice.artist_name
+  );
+}
+
+function createQuestionObject(
+  track: { track_id: any; track_name: any; artist_id: any; artist_name: any },
+  snippet: { snippet_id: any; snippet_body: any },
+  artistFirstAlternativeChoice: { artist_id: any; artist_name: any },
+  artistSecondAlternativeChoice: { artist_id: any; artist_name: any }
+) {
   return {
     trackId: track.track_id,
     trackName: track.track_name,
@@ -132,27 +259,53 @@ export async function prepareQuestion(trackList: any, artistList: any) {
   };
 }
 
-async function getTopTracksInCountry(country: string = "wx") {
-  const url = `${protocol}://${domain}/${path}/${version}/chart.tracks.get?chart_name=${queryParameters.chartName}&page=${queryParameters.page}&page_size=${queryParameters.pageSize}&country=${queryParameters.country}&f_has_lyrics=${queryParameters.filterHasLyrics}&apikey=${queryParameters.apiKey}`;
-  const proxedUrl = "https://corsproxy.io/?" + url;
-  log({ tracksUrl: url });
-  log({ tracksOptions: options });
+function createEmpyQuestionObject() {
+  return {
+    trackId: 0,
+    trackName: "",
+    trackSnippet: {
+      id: 0,
+      body: "",
+    },
+    choices: [],
+    isAnsweredCorrectly: false,
+  };
+}
 
-  const apiResponse = await fetch(proxedUrl, options);
-  if (!apiResponse.ok) {
-    log({ apiResponse });
-    throw new Error(genericServerErrorMessage).stack;
+async function prepareQuestion(trackList: any, artistList: any) {
+  const track = await getRandomTrackPromise(trackList);
+  const snippet = await getTrackSnippet(track.track_id);
+  const artistFirstAlternativeChoice = await getRandomArtistPromise(
+    artistList,
+    1
+  );
+  const artistSecondAlternativeChoice = await getRandomArtistPromise(
+    artistList,
+    2
+  );
+  log({ promisedSnippet: snippet });
+  log({ promisedTrack: track });
+  log({ promisedArtist1: artistFirstAlternativeChoice });
+  log({ promisedArtist2: artistFirstAlternativeChoice });
+
+  if (
+    isValidTrack(track) &&
+    isValidSnippet(snippet) &&
+    isValidArtistAlternativeChoice(artistFirstAlternativeChoice) &&
+    isValidArtistAlternativeChoice(artistSecondAlternativeChoice)
+  ) {
+    return createQuestionObject(
+      track,
+      snippet,
+      artistFirstAlternativeChoice,
+      artistSecondAlternativeChoice
+    );
   }
-
-  const parsedResponse = await apiResponse.json();
-  return parsedResponse?.message?.body?.track_list ?? null;
 }
 
 async function getTrackSnippet(trackId: number) {
   const url = `${protocol}://${domain}/${path}/${version}/track.snippet.get?track_id=${trackId}&apikey=${queryParameters.apiKey}`;
-  const proxedUrl = "https://corsproxy.io/?" + url;
-
-  const apiResponse = await fetch(proxedUrl, options);
+  const apiResponse = await fetch(url, options);
 
   log(`getTrackSnippet -- trackID --> ${trackId}`);
 
@@ -169,44 +322,12 @@ async function getTrackSnippet(trackId: number) {
   return apiResponseJson?.message?.body?.snippet ?? null;
 }
 
-async function getTopArtistInCountry(country: string = "wx") {
-  const url = `${protocol}://${domain}/${path}/${version}/chart.artists.get?page=${queryParameters.page}&page_size=${queryParameters.pageSize}&country=${queryParameters.country}&apikey=${queryParameters.apiKey}`;
-  const proxedUrl = "https://corsproxy.io/?" + url;
-  log({ proxedUrl });
-  const apiResponse = await fetch(proxedUrl, options);
-
-  if (!apiResponse.ok) {
-    throw new Error(genericServerErrorMessage).stack;
-  }
-
-  const apiResponseJson = await apiResponse.json();
-  return apiResponseJson?.message?.body?.artist_list ?? null;
-}
-
-function getRandomTrack(trackList: any) {
-  const randomTrack = trackList[getRandomNumber(trackList.length)].track;
-  if (trackIdsArray.includes(randomTrack.track_id)) {
-    getRandomTrack(trackList);
-  } else {
-    trackIdsArray.push(randomTrack.track_id);
-    return randomTrack;
-  }
-}
-
-function getRandomArtist(artistList: any) {
-  const randomArtist = artistList[getRandomNumber(artistList.length)].artist;
-  return randomArtist;
-}
-
-let trackAttempt = 0;
 function getRandomTrackPromise(trackList: any): Promise<any> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     log("entering getRandomTrackPromise promise");
     function recursiveGetRandomTrack() {
       const randomTrack = trackList[getRandomNumber(trackList.length)].track;
 
-      trackAttempt++;
-      log({ trackAttemptNumber: trackAttempt });
       log({ trackIdsArray });
 
       if (trackIdsArray.includes(randomTrack.track_id)) {
@@ -232,12 +353,11 @@ function getRandomArtistPromise(
   artistList: any,
   otherArtistNumber: number
 ): Promise<any> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     function recursiveGetRandomArtist() {
       const randomArtist =
         artistList[getRandomNumber(artistList.length)].artist;
 
-      artistAttempt++;
       log({ artistsIdsArray });
 
       if (artistsIdsArray.includes(randomArtist.artist_id)) {
@@ -255,61 +375,5 @@ function getRandomArtistPromise(
       }
     }
     recursiveGetRandomArtist();
-  });
-}
-
-let trackAttemptt = 0;
-function RrecursiveGetRandomTrack(trackList: any): Promise<any> {
-  log("random track -- starting to get random track");
-  return new Promise((resolve, reject) => {
-    const randomTrack = trackList[getRandomNumber(trackList.length)].track;
-
-    trackAttemptt++;
-    log({ trackAttemptNumber: trackAttemptt });
-    log({ trackIdsArray });
-
-    if (trackIdsArray.includes(randomTrack.track_id)) {
-      log(
-        `random track -- duplicate found -- starting to call get random track function recursively`
-      );
-      RrecursiveGetRandomTrack(trackList);
-    } else {
-      log(
-        `random track -- recursion breaking condition happening. Pushing found track with id ${randomTrack.track_id}`
-      );
-      trackIdsArray.push(randomTrack.track_id);
-      log({ trackIdsArray });
-      resolve(randomTrack);
-    }
-  });
-}
-
-let artistAttempt = 0;
-function recursiveGetRandomArtist(
-  artistList: any,
-  otherArtistNumber: number
-): Promise<any> {
-  log(
-    `random artist ${otherArtistNumber} -- starting to get random artist number ${otherArtistNumber}`
-  );
-  return new Promise((resolve, reject) => {
-    const randomArtist = artistList[getRandomNumber(artistList.length)].artist;
-
-    artistAttempt++;
-    log({ artistsIdsArray });
-
-    if (artistsIdsArray.includes(randomArtist.artist_id)) {
-      log(
-        `random artist ${otherArtistNumber} -- duplicate found -- starting to call get random artist function recursively`
-      );
-      recursiveGetRandomArtist(artistList, otherArtistNumber);
-    } else {
-      log(
-        `random artist ${otherArtistNumber} -- recursion breaking condition happening. Pushing found artist with id ${randomArtist.artist_id}`
-      );
-      log({ artistsIdsArray });
-      artistsIdsArray.push(randomArtist.artist_id);
-      resolve(randomArtist);
-    }
   });
 }
