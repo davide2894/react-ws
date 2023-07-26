@@ -49,14 +49,28 @@ function localDbExists() {
 
 export function addLastPlayedQuizToLocalDb(quiz: QuizType, userName: string) {
   let userInLocalDb = getUserInLocalDbByName(userName);
+
   if (userInLocalDb) {
+    const currentDate = new Date();
     userInLocalDb.personalScores.push({
-      dateString: quiz.dateString,
-      time: quiz.totalTime,
+      dateString: currentDate.toDateString(),
+      time: calculateGameTime(
+        quiz.startDateInMilliseconds,
+        currentDate.getTime()
+      ),
       points: quiz.totalPoints,
-    } as Score);
-    updateUserInLocalDb(userInLocalDb);
+    }) as Score,
+      updateUserInLocalDb(userInLocalDb);
   }
+}
+
+function calculateGameTime(
+  startGameDateInMilliseconds: number,
+  endGameDateInMilliseconds: number
+) {
+  return Math.floor(
+    (endGameDateInMilliseconds - startGameDateInMilliseconds) / 1000
+  );
 }
 
 export function getUserGameScores(userName: string) {
@@ -75,7 +89,7 @@ function getUserHighScore(user: User): HighScore {
   if (user && user.personalScores && user.personalScores.length) {
     user.personalScores.forEach((game) => {
       highScore.runs++;
-      highScore.time += 1;
+      highScore.time += game.time;
       highScore.points += game.points;
     });
   }
