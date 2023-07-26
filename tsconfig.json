@@ -18,7 +18,7 @@
       "@components*": ["./src/components*"],
       "@styles*": ["./src/styles/*"],
       "@pages*": ["./src/pages*"],
-      "@store": ["./src/store.ts"],
+      "@store": ["src/store/store.ts"],
       "@types": ["./src/types.ts"],
       "@utils*": ["./src/utils*"]
     },
