@@ -1,4 +1,8 @@
 import { Score, HighScore, QuizType, User, UserTypeInLocalDb } from "@types";
+import {
+  calculatElapsedMilliseconds,
+  convertMillisecondsToSeconds,
+} from "@utils/time";
 
 const usersKeyInLocalDb = "musixmatch/who-sings/localDb/users";
 
@@ -43,10 +47,6 @@ export function getUserInLocalDbByName(name: string) {
   return users.find((user) => user.name === name);
 }
 
-function localDbExists() {
-  return localStorage.getItem("musixmatch/who-sings/localDb/users");
-}
-
 export function addLastPlayedQuizToLocalDb(quiz: QuizType, userName: string) {
   let userInLocalDb = getUserInLocalDbByName(userName);
 
@@ -64,18 +64,30 @@ export function addLastPlayedQuizToLocalDb(quiz: QuizType, userName: string) {
   }
 }
 
+export function getUserGameScores(userName: string) {
+  let userInLocalDb = getUserInLocalDbByName(userName);
+  return userInLocalDb?.personalScores || [];
+}
+
+export function getAllHighScores() {
+  const users = getUsersInLocalDb();
+  const allHighScores: Array<HighScore> = [];
+  users.forEach((user) => {
+    allHighScores.push(getUserHighScore(user));
+  });
+  return allHighScores;
+}
+
 function calculateGameTime(
   startGameDateInMilliseconds: number,
   endGameDateInMilliseconds: number
 ) {
-  return Math.floor(
-    (endGameDateInMilliseconds - startGameDateInMilliseconds) / 1000
+  const elapsedGameMilliseconds = calculatElapsedMilliseconds(
+    startGameDateInMilliseconds,
+    endGameDateInMilliseconds
   );
-}
 
-export function getUserGameScores(userName: string) {
-  let userInLocalDb = getUserInLocalDbByName(userName);
-  return userInLocalDb?.personalScores || [];
+  return Math.floor(convertMillisecondsToSeconds(elapsedGameMilliseconds));
 }
 
 function getUserHighScore(user: User): HighScore {
@@ -96,11 +108,6 @@ function getUserHighScore(user: User): HighScore {
   return highScore;
 }
 
-export function getAllHighScores() {
-  const users = getUsersInLocalDb();
-  const allHighScores: Array<HighScore> = [];
-  users.forEach((user) => {
-    allHighScores.push(getUserHighScore(user));
-  });
-  return allHighScores;
+function localDbExists() {
+  return localStorage.getItem("musixmatch/who-sings/localDb/users");
 }
