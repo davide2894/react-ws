@@ -3,8 +3,8 @@ import styles from "./BackButton.module.css";
 
 function BackButton() {
   return (
-    <Link href="/" className={styles.backButton}>
-      Go back
+    <Link href="/quiz/lobby" className={styles.backButton}>
+      Back to game lobby
     </Link>
   );
 }
