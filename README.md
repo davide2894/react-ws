@@ -2,6 +2,8 @@
 
 This is a music-based quiz game I built as per requirements provided by [Musixmatch](https://www.musixmatch.com/)
 
+[Demo](https://react-ws.vercel.app/)
+
 ## User journey
 
 The user has to log his name to register an account and start the game.
