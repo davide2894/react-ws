@@ -56,11 +56,13 @@ function Question(props: { question: QuestionType }) {
           <ul className={styles.choiceList}>
             {question.choices.map((choice: any, idx: number) => {
               log({
+                msg: `logging choices for questionId ${question.trackId}`,
                 questionId: question.trackId,
                 currentChoice: choice.id,
                 idx: idx,
                 key: props.question.trackId + choice.id + idx,
               });
+              log({ key: props.question.trackId + choice.id + idx });
               return (
                 <Choice
                   key={props.question.trackId + choice.id + idx}
