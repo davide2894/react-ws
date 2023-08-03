@@ -10,7 +10,7 @@ function Choice(props: {
 }) {
   const [isSelected, setIsSelected] = useState(false);
   const isCorrectChoiceClass = props.choice.isCorrectChoice
-    ? styles.isCorrectChoice
+    ? "isCorrectChoice"
     : "";
   let isCorrectChoiceSelectedClass;
   let isChoiceDisabledClass;
@@ -25,6 +25,8 @@ function Choice(props: {
 
   if (props.isChoiceDisabled) {
     isChoiceDisabledClass = styles.choiceDisabled;
+  } else {
+    isChoiceDisabledClass = "";
   }
 
   function handleChoiceClick(evt: React.MouseEvent<HTMLLIElement, MouseEvent>) {
