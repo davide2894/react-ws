@@ -72,7 +72,6 @@ h2 {
 .scoresTable {
   margin-top: 2rem;
   max-width: 960px;
-  overflow-x: auto;
 }
 
 .scoresTable td {
@@ -82,6 +81,7 @@ h2 {
 
 .scoresTable table {
   word-break: break-all;
+  overflow-x: scroll;
 }
 
 .scoresTable table {
