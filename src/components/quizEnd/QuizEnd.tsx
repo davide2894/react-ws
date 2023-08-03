@@ -5,6 +5,7 @@ import { useAppSelector } from "src/customHooks/useAppSelector";
 import { useAppDispatch } from "src/customHooks/useAppDispatch";
 import { useRouter } from "next/router";
 import styles from "./QuizEnd.module.css";
+import { globalHighScoresString, personalScoresString } from "src/constants";
 
 function QuizEnd() {
   const dispatch = useAppDispatch();
@@ -29,10 +30,10 @@ function QuizEnd() {
       </div>
       <div className={styles.quizEndActions}>
         <Link className={styles.quizEndLink} href="/highscore">
-          Global high scores
+          {globalHighScoresString}
         </Link>
         <Link className={styles.quizEndLink} href="/user">
-          Personal scores
+          {personalScoresString}
         </Link>
         <button className={styles.quizRestartButton} onClick={handleQuizEnd}>
           Play again

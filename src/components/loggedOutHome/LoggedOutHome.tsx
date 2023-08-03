@@ -1,5 +1,6 @@
 import LoginButton from "@components/loginButton/LoginButton";
 import Link from "next/link";
+import { globalHighScoresString } from "src/constants";
 import styles from "./LoggedOut.module.css";
 
 function LoggedOutHome() {
@@ -16,7 +17,7 @@ function LoggedOutHome() {
       <div className={styles.actions}>
         <LoginButton />
         <Link className={styles.link} href="/highscore">
-          High Score
+          {globalHighScoresString}
         </Link>
       </div>
     </div>

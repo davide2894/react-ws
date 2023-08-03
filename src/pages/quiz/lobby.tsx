@@ -6,6 +6,7 @@ import { resetQuiz } from "src/store/features/quiz/quizSlice";
 import { useEffect } from "react";
 import Link from "next/link";
 import useProtectRoute from "src/customHooks/useProtectRoute";
+import { globalHighScoresString, personalScoresString } from "src/constants";
 
 function Lobby() {
   useProtectRoute();
@@ -33,14 +34,14 @@ function Lobby() {
               Wecome
               <span className={styles.userName}>{user.name}</span>!
               <p>This is the game lobby.</p>
-              <p>Choose what to do :)</p>
+              <p>Choose what to do :D </p>
             </div>
             <div className={styles.actions}>
               <Link className={styles.link} href="/highscore">
-                Global high scores
+                {globalHighScoresString}
               </Link>
               <Link className={styles.link} href="/user">
-                Personal scores
+                {personalScoresString}
               </Link>
               <Link className={styles.link} href="/quiz/game">
                 Play a game
