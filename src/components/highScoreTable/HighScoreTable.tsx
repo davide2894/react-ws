@@ -1,5 +1,6 @@
 import GameScoreTableRow from "@components/gameScoreTableRow/GameScoreTableRow";
 import { HighScore, Score } from "@types";
+import log from "@utils/log";
 import React, { useEffect, useState } from "react";
 import { getAllHighScores } from "src/data/localDatabase";
 
@@ -34,11 +35,10 @@ function HighScoreTable() {
         </thead>
         <tbody>
           {highScores.sort(compareFn).map((highScore: any, idx: number) => {
+            log({ key: highScore.id });
             return (
-              // develoepr note: idx is not the best unique id value to assign to a child's key
-              // should improve this with a better one
               <GameScoreTableRow
-                key={idx}
+                key={highScore.id}
                 position={idx + 1}
                 score={highScore}
               />

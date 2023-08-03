@@ -10,6 +10,7 @@ export interface Score {
   dateString: string;
   time: number;
   points: number;
+  id: string | number;
 }
 
 export interface HighScore extends Score {

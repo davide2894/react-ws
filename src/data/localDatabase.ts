@@ -1,8 +1,10 @@
 import { Score, HighScore, QuizType, User, UserTypeInLocalDb } from "@types";
+import log from "@utils/log";
 import {
   calculatElapsedMilliseconds,
   convertMillisecondsToSeconds,
 } from "@utils/time";
+import { randomUUID } from "crypto";
 
 const usersKeyInLocalDb = "musixmatch/who-sings/localDb/users";
 
@@ -59,6 +61,7 @@ export function addLastPlayedQuizToLocalDb(quiz: QuizType, userName: string) {
         currentDate.getTime()
       ),
       points: quiz.totalPoints,
+      id: crypto.randomUUID(),
     }) as Score,
       updateUserInLocalDb(userInLocalDb);
   }
@@ -75,6 +78,7 @@ export function getAllHighScores() {
   users.forEach((user) => {
     allHighScores.push(getUserHighScore(user));
   });
+  log({ allHighScores });
   return allHighScores;
 }
 
@@ -97,12 +101,14 @@ function getUserHighScore(user: User): HighScore {
     time: 0,
     points: 0,
     dateString: "",
+    id: "",
   };
   if (user && user.personalScores && user.personalScores.length) {
     user.personalScores.forEach((game) => {
       highScore.runs++;
       highScore.time += game.time;
       highScore.points += game.points;
+      highScore.id += game.id;
     });
   }
   return highScore;

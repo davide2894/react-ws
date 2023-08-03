@@ -1,5 +1,6 @@
 import GameScoreTableRow from "@components/gameScoreTableRow/GameScoreTableRow";
 import { UserTypeInLocalDb } from "@types";
+import log from "@utils/log";
 
 function UserScoreTable(props: { user: UserTypeInLocalDb }) {
   return (
@@ -19,11 +20,10 @@ function UserScoreTable(props: { user: UserTypeInLocalDb }) {
             [...props.user.personalScores]
               .reverse()
               .map((personalScore, idx) => {
+                log({ key: personalScore.id });
                 return (
-                  // develoepr note: idx is not the best unique id value to assign to a child's key
-                  // should improve this with a better one
                   <GameScoreTableRow
-                    key={idx}
+                    key={personalScore.id}
                     position={props.user.personalScores.length - idx}
                     score={personalScore}
                   />
