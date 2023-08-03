@@ -1,5 +1,5 @@
 import LoggedOutHome from "@components/loggedOutHome/LoggedOutHome";
-import { useAppSelector } from "src/store/store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
 import { useRouter } from "next/router";
 
 function Home() {

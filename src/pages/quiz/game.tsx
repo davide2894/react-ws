@@ -1,10 +1,10 @@
 import QuizEnd from "@components/quizEnd/QuizEnd";
 import QuizInGameCard from "@components/quizInGameCard/QuizInGameCard";
-import { useAppSelector } from "src/store/store";
 import { prepareQuizQuestions } from "src/api/tracksApi";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useAppSelector } from "src/customHooks/useAppSelector";
+import { useAppDispatch } from "src/customHooks/useAppDispatch";
 import LogoutButton from "@components/logoutButton/LogoutButton";
 import styles from "./game.module.css";
 import { resetQuiz, startQuiz } from "src/store/features/quiz/quizSlice";
@@ -14,7 +14,7 @@ import useProtectRoute from "src/customHooks/useProtectRoute";
 function Game(props: { questionsFetchedOnServerSide: QuestionType[] }) {
   useProtectRoute();
   const user = useAppSelector((state) => state.userReducer);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const router = useRouter();
   const quizState = useAppSelector((state) => state.quizReducer);
   const isQuizEnd =

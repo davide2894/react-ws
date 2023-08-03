@@ -1,5 +1,5 @@
 import LogoutButton from "@components/logoutButton/LogoutButton";
-import { useAppSelector } from "src/store/store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
 import Link from "next/link";
 import styles from "./LoggedHome.module.css";
 

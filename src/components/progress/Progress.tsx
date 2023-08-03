@@ -1,4 +1,4 @@
-import { useAppSelector } from "src/store/store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
 import styles from "./Progress.module.css";
 
 function Progress() {

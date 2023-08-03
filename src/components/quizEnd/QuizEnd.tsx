@@ -1,13 +1,13 @@
 import Score from "@components/points/Points";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
 import { resetQuiz } from "src/store/features/quiz/quizSlice";
-import { useAppSelector } from "src/store/store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
+import { useAppDispatch } from "src/customHooks/useAppDispatch";
 import { useRouter } from "next/router";
 import styles from "./QuizEnd.module.css";
 
 function QuizEnd() {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const router = useRouter();
   const quizState = useAppSelector((state) => state.quizReducer);
 

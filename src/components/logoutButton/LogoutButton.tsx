@@ -2,12 +2,12 @@ import Modal from "@components/modal/Modal";
 import { logout } from "src/store/features/user/userSlice";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "src/customHooks/useAppDispatch";
 import logoutStyles from "./Logout.module.css";
 
 function LogoutButton(props: { shouldDisplayGameLossWarning: boolean }) {
   const [showLogoutModal, setShowLogoutModal] = useState(false);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const router = useRouter();
 
   function handleLogout(evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) {

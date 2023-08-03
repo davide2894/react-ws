@@ -1,4 +1,4 @@
-import { useAppSelector } from "@store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 

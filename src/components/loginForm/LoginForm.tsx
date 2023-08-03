@@ -1,14 +1,14 @@
 import { SyntheticEvent, useState } from "react";
-import { useDispatch } from "react-redux";
 import SubmitButton from "@components/submitButton/SubmitButton";
 import { useRouter } from "next/router";
 import { login } from "src/store/features/user/userSlice";
 import styles from "./LoginForm.module.css";
+import { useAppDispatch } from "src/customHooks/useAppDispatch";
 
 function LoginForm(props: { onLoginFormSubmit: () => void }) {
   const [userName, setUserName] = useState("");
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const router = useRouter();
 
   function onFormSubmit(evt: SyntheticEvent) {

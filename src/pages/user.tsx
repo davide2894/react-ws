@@ -1,18 +1,19 @@
 import BackButton from "@components/backButton/BackButton";
 import UserScoreTable from "@components/userScoreTable/UserScoreTable";
-import { useAppSelector } from "src/store/store";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import styles from "./user.module.css";
-import { useDispatch } from "react-redux";
 import { getUserGameScores } from "src/data/localDatabase";
 import { updateUser } from "src/store/features/user/userSlice";
 import useProtectRoute from "src/customHooks/useProtectRoute";
+import { useAppDispatch } from "src/customHooks/useAppDispatch";
+import { useAppSelector } from "src/customHooks/useAppSelector";
+import log from "@utils/log";
 
 function User() {
   useProtectRoute();
   const user = useAppSelector((state) => state.userReducer);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     if (window.localStorage) {

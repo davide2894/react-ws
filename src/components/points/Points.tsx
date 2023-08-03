@@ -1,4 +1,4 @@
-import { useAppSelector } from "src/store/store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
 import styles from "./Points.module.css";
 function Points() {
   const points = useAppSelector((state) => state.quizReducer.totalPoints);

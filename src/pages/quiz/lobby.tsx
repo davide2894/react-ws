@@ -1,7 +1,7 @@
-import { useAppSelector } from "src/store/store";
+import { useAppSelector } from "src/customHooks/useAppSelector";
+import { useAppDispatch } from "src/customHooks/useAppDispatch";
 import LogoutButton from "@components/logoutButton/LogoutButton";
 import styles from "./lobby.module.css";
-import { useDispatch } from "react-redux";
 import { resetQuiz } from "src/store/features/quiz/quizSlice";
 import { useEffect } from "react";
 import Link from "next/link";
@@ -10,7 +10,7 @@ import useProtectRoute from "src/customHooks/useProtectRoute";
 function Lobby() {
   useProtectRoute();
   const user = useAppSelector((state) => state.userReducer);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const quizState = useAppSelector((state) => state.quizReducer);
   let content;
 
