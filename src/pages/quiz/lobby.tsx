@@ -31,7 +31,7 @@ function Lobby() {
           <div className={styles.main}>
             <div className={styles.welcome}>
               <p></p>
-              Wecome
+              Welcome
               <span className={styles.userName}>{user.name}</span>!
               <p>This is the game lobby.</p>
               <p>Choose what to do :D </p>
