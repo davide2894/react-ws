@@ -4,7 +4,6 @@ import {
   calculatElapsedMilliseconds,
   convertMillisecondsToSeconds,
 } from "@utils/time";
-import { randomUUID } from "crypto";
 
 const usersKeyInLocalDb = "musixmatch/who-sings/localDb/users";
 
@@ -62,8 +61,8 @@ export function addLastPlayedQuizToLocalDb(quiz: QuizType, userName: string) {
       ),
       points: quiz.totalPoints,
       id: crypto.randomUUID(),
-    }) as Score,
-      updateUserInLocalDb(userInLocalDb);
+    }) as Score;
+    updateUserInLocalDb(userInLocalDb);
   }
 }
 
